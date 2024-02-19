@@ -19,6 +19,10 @@
 			<a href="index.html" class="header-brand">
 				<img src="assets/img/logo_b.svg" data-light-src="assets/img/logo.svg" data-dark-src="assets/img/logo_b.svg">
 			</a>
+			<div>
+				<button class="flag-button" onclick="changeLanguage('en')" style=""><img src="assets/img/uk_flag.png" alt="English"></button>
+				<button class="flag-button" onclick="changeLanguage('es')"><img src="assets/img/spain_flag.png" alt="English"></button>
+			</div>
 			<button class="sections-nav-toggler" aria-label="Toggle navigation">
 				<span class="sections-nav-toggler-bar"></span>
 				<span class="sections-nav-toggler-bar"></span>
@@ -30,58 +34,31 @@
 	<nav class="sections-nav-container">
 		<ul id="sections-nav" class="nav sections-nav sections-nav-animated">
 			<li class="sections-nav-item">
-				<a href="#section-01" class="nav-link sections-nav-link goto-section active">
-					<span class="sections-nav-counter">01</span>
-					Top
-				</a>
+				<a href="#section-01" class="nav-link sections-nav-link goto-section translate" data-key="sidemenu.top"></a>
 			</li>
 			<li class="sections-nav-item">
-				<a href="#section-02" class="nav-link sections-nav-link goto-section">
-					<span class="sections-nav-counter">02</span>
-					About me
-				</a>
+				<a href="#section-02" class="nav-link sections-nav-link goto-section translate" data-key="sidemenu.about"></a>
 			</li>
 			<li class="sections-nav-item">
-				<a href="#section-03" class="nav-link sections-nav-link goto-section">
-					<span class="sections-nav-counter">03</span>
-					Experiences
-				</a>
+				<a href="#section-03" class="nav-link sections-nav-link goto-section translate" data-key="sidemenu.experiences"></a>
 			</li>
 			<li class="sections-nav-item">
-				<a href="#section-04" class="nav-link sections-nav-link goto-section">
-					<span class="sections-nav-counter">04</span>
-					Skills
-				</a>
+				<a href="#section-04" class="nav-link sections-nav-link goto-section translate" data-key="sidemenu.skills"></a>
 			</li>
 			<li class="sections-nav-item">
-				<a href="#section-05" class="nav-link sections-nav-link goto-section">
-					<span class="sections-nav-counter">05</span>
-					Education
-				</a>
+				<a href="#section-05" class="nav-link sections-nav-link goto-section translate" data-key="sidemenu.education"></a>
 			</li>
 			<li class="sections-nav-item">
-				<a href="#section-06" class="nav-link sections-nav-link goto-section">
-					<span class="sections-nav-counter">06</span>
-					Testimonials
-				</a>
+				<a href="#section-06" class="nav-link sections-nav-link goto-section translate" data-key="sidemenu.testimonials"></a>
 			</li>
 			<li class="sections-nav-item">
-				<a href="#section-07" class="nav-link sections-nav-link goto-section">
-					<span class="sections-nav-counter">07</span>
-					Projects
-				</a>
+				<a href="#section-07" class="nav-link sections-nav-link goto-section translate" data-key="sidemenu.projects"></a>
 			</li>
 			<li class="sections-nav-item">
-				<a href="#section-08" class="nav-link sections-nav-link goto-section">
-					<span class="sections-nav-counter">08</span>
-					Licences & Certifications
-				</a>
+				<a href="#section-08" class="nav-link sections-nav-link goto-section translate" data-key="sidemenu.licences"></a>
 			</li>
 			<li class="sections-nav-item">
-				<a href="#section-09" class="nav-link sections-nav-link goto-section">
-					<span class="sections-nav-counter">09</span>
-					Contact
-				</a>
+				<a href="#section-09" class="nav-link sections-nav-link goto-section translate" data-key="sidemenu.contact"></a>
 			</li>
 			<li class="sections-nav-item">
 				<div class="sections-nav-info">
@@ -100,13 +77,13 @@
 							<div class="jumbotron jumbotron-fluid pt-6 pt-lg-8 pb-0 mb-0">
 								<img src="assets/img/avatar.jpg" class="jumbotron-img animation-translate animation-item-1" alt="Avatar">
 								<h1 class="display-1 display-animated display-animated-in animation-translate animation-item-2">Elvis<br>Alonso<br>Lueje</h1>
-								<p class="lead animation-translate animation-item-3">CROSS PLATFORM APPS DEVELOPER</p>
+								<p class="lead animation-translate animation-item-3 translate" data-key="section.one.role"></p>
 							</div>
 						</div>
 						<div class="section-footer animation-translate animation-item-4">
 							<a class="section-next goto-section" href="#section-02">
 								<span class="section-next-counter">01/09</span>
-								<span class="section-next-label">Next chapter</span>
+								<span class="section-next-label translate" data-key="general.nextchapter"></span>
 								<span class="section-next-icon"></span>
 							</a>
 						</div>
@@ -115,85 +92,56 @@
 						<div class="section-body">
 							<div class="row">
 								<div class="col col-xl-10">
-									<h2 class="section-title animation-translate-overline animation-item-1">About me</h2>
-									<article class="article animation-translate animation-item-2">
-										<p>
-											I am a software developer with over <span id="years"></span> years of experience in Java and Spring, and with knowledge of Vue and Angular.
-											I am passionate about creating innovative and efficient solutions for different sectors.
-										</p>
-										<p>
-											My training in Java began in the higher-level Vocational Training (FP) in Web Application Development, where I had the opportunity to participate in an Erasmus+ project along with other students from different European countries. 
-											We developed a web application with AngularJS and Firebase to promote classroom learning through gamification. 
-											It was a very enriching experience, both technically and personally. 
-											During my studies, I also learned the fundamentals of other languages, such as C# and Python.
-										</p>
-										<p>
-											Since I entered the working world, I have worked for various companies, using different Java web frameworks, but especially Spring Framework and Spring Boot. 
-											I was able to participate in the development of robust and scalable web applications, using relational databases such as MySQL and Oracle. 
-											In addition, I have integrated different services and APIs, such as REST, SOAP, OAuth, and JWT.
-										</p>
-										<p>
-											In addition to Java, I have learned to use other languages and tools to create attractive and functional interfaces. 
-											Some of the frameworks I have used are Vue and Angular, which facilitate the development of reusable and dynamic components. 
-											To implement responsive and adaptive designs, I have used HTML, CSS, and Bootstrap and, to manage the development environment and the dependencies of web applications, I have made use of Node.js and NPM.
-										</p>
-										<p>
-											My goal as a developer is to never stop learning and improving, and to stay up-to-date with new technologies and methodologies. 
-											I am motivated to work on projects that pose a challenge and an opportunity for growth. 
-											In addition, I am a curious, creative person committed to my work who also enjoys working in a team and sharing ideas and knowledge. 
-										</p>
-									</article>
+									<h2 class="section-title animation-translate-overline animation-item-1 translate" data-key="section.second.title"></h2>
+									<article class="article animation-translate animation-item-2 translate" data-key="section.second.about"></article>
 								</div>
 							</div>
 						</div>
 						<div class="section-footer animation-translate animation-item-3">
 							<a class="section-next goto-section" href="#section-03">
 								<span class="section-next-counter">02/09</span>
-								<span class="section-next-label">Next chapter</span>
+								<span class="section-next-label translate" data-key="general.nextchapter"></span>
 								<span class="section-next-icon"></span>
 							</a>
 						</div>
 					</section>
 					<section id="section-03" class="section animation">
 						<div class="section-body">
-							<h2 class="section-title animation-translate-overline animation-item-1">Experiences</h2>
+							<h2 class="section-title animation-translate-overline animation-item-1 translate" data-key="section.third.title"></h2>
 							<div class="timeline timeline-animated">
 								<div class="timeline-item">
 									<span class="timeline-date">Jul 2023&nbsp;–&nbsp;Now</span>
 									<h3 class="timeline-title">Hiberus</h3>
 									<p class="timeline-text">Software Developer</p>
-									<span class="timeline-date">
-										Remote
-									</span>
+									<span class="timeline-date translate" data-key="section.third.remote"></span>
 								</div>
 								<div class="timeline-item">
-									<span class="timeline-date">Apr 2021&nbsp;–&nbsp;Jul 2023</span>
+									<span class="timeline-date"><span class="translate" data-key="month.apr"></span> 2021&nbsp;–&nbsp;Jul 2023</span>
 									<h3 class="timeline-title">EDF (Entornos de Formacion)</h3>
 									<p class="timeline-text">Software Developer</p>
-									<span class="timeline-date">
-										Valencia, Valencian Community, Spain
-									</span>
+									<span class="timeline-date translate" data-key="section.third.valencia"></span>
 								</div>
 								<div class="timeline-item">
 									<div>
-										<span class="timeline-date">Apr 2017&nbsp;–&nbsp;Apr 2021</span>
+										<span class="timeline-date"><span class="translate" data-key="month.apr"></span> 2017&nbsp;–&nbsp;<span class="translate" data-key="month.apr"></span> 2021</span>
 									
 										<h3 class="timeline-title">Capgemini</h3>
 									
 										<p class="timeline-text">Junior Consultant</p>
 										<span class="timeline-date">
-											Valencia, Valencian Community, Spain<br/>
-											Nov 2020&nbsp;–&nbsp;Apr 2021
+											<a class="translate" data-key="section.third.valencia"></a><br>
+											<a>Nov 2020&nbsp;–&nbsp;<span class="translate" data-key="month.apr"></span> 2021</a>
 										</span>
 										<p class="timeline-text">Junior Consultant</p>
 										<span class="timeline-date">
-											Langreo, Asturias, Spain<br/>
-											Jul 2017&nbsp;–&nbsp;Nov 2020
+											<a class="translate" data-key="section.third.asturias"></a><br>
+											<a>Jul 2017&nbsp;–&nbsp;Nov 2020</a>
+											
 										</span>
-										<p class="timeline-text">Developer</p>
+										<p class="timeline-text translate" data-key="section.third.developer"></p>
 										<span class="timeline-date">
-											Langreo, Asturias, Spain<br/>
-											2017&nbsp;–&nbsp;Jun 2017
+											<a class="translate" data-key="section.third.asturias"></a><br>
+											<a>2017&nbsp;–&nbsp;Jun 2017</a>
 										</span>
 									</div>
 								</div>
@@ -202,15 +150,15 @@
 						<div class="section-footer animation-translate animation-item-3">
 							<a class="section-next goto-section" href="#section-04">
 								<span class="section-next-counter">03/09</span>
-								<span class="section-next-label">Next chapter</span>
+								<span class="section-next-label translate" data-key="general.nextchapter"></span>
 								<span class="section-next-icon"></span>
 							</a>
 						</div>
 					</section>
 					<section id="section-04" class="section animation">
 						<div class="section-body">
-							<h2 class="section-title animation-translate-overline animation-item-1">Skills</h2>
-							<h3>Programming Languages</h3>
+							<h2 class="section-title animation-translate-overline animation-item-1 translate" data-key="section.forth.title"></h2>
+							<h3 class="translate" data-key="section.forth.programminglang"></h3>
 							<div class="row animation-translate animation-item-2">
 								<div class="col-12 col-md-12">
 									<a class="card" href="#j2ee-modal" data-toggle="modal"><strong>J2EE &#x25B7;</strong></a>
@@ -227,7 +175,7 @@
 									</div>
 								</div>
 							</div>
-							<h3>Webpage Languages</h3>
+							<h3 class="translate" data-key="section.forth.webpagelang"></h3>
 							<div class="row animation-translate animation-item-2">
 								<div class="col-12 col-md-6">
 									<strong class="progress-label">HTML5</strong>
@@ -254,7 +202,7 @@
 									</div>
 								</div>
 							</div>
-							<h3>Databases and Query Languages</h3>
+							<h3 class="translate" data-key="section.forth.databasequery"></h3>
 							<div class="row animation-translate animation-item-2">
 								<div class="col-12 col-md-12">
 									<strong class="progress-label">Firebase</strong>
@@ -271,7 +219,7 @@
 									</div>
 								</div>
 							</div>
-							<h3>Webpage Tools</h3>
+							<h3 class="translate" data-key="section.forth.webpagetools"></h3>
 							<div class="row animation-translate animation-item-2">
 								<div class="col-12 col-md-12">
 									<strong class="progress-label">Postman</strong>
@@ -288,7 +236,7 @@
 									</div>
 								</div>
 							</div>
-							<h3>Version Control</h3>
+							<h3 class="translate" data-key="section.forth.versioncontrol"></h3>
 							<div class="row animation-translate animation-item-2">
 								<div class="col-12 col-md-6">
 									<strong class="progress-label">Git</strong>
@@ -311,7 +259,7 @@
 									</div>
 								</div>
 							</div>
-							<h3>Testing</h3>
+							<h3 class="translate" data-key="section.forth.testing"></h3>
 							<div class="row animation-translate animation-item-2">
 								<div class="col-12 col-md-12">
 									<strong class="progress-label">JUnit</strong>
@@ -324,7 +272,7 @@
 									</div>
 								</div>
 							</div>
-							<h3>Others</h3>
+							<h3 class="translate" data-key="section.forth.others"></h3>
 							<div class="row animation-translate animation-item-2">
 								<div class="col-12 col-md-6">
 									<strong class="progress-label">Jenkins</strong>
@@ -351,31 +299,21 @@
 						<div class="section-footer animation-translate animation-item-3">
 							<a class="section-next goto-section" href="#section-05">
 								<span class="section-next-counter">04/09</span>
-								<span class="section-next-label">Next chapter</span>
+								<span class="section-next-label translate" data-key="general.nextchapter"></span>
 								<span class="section-next-icon"></span>
 							</a>
 						</div>
 					</section>
 					<section id="section-05" class="section animation">
 						<div class="section-body">
-							<h2 class="section-title animation-translate-overline animation-item-1">Education</h2>
+							<h2 class="section-title animation-translate-overline animation-item-1 translate" data-key="section.fifth.title"></h2>
 							<div class="timeline timeline-animated">
 								<div class="timeline-item">
 									<span class="timeline-date">2015&nbsp;–&nbsp;2017</span>
 									<h3 class="timeline-title">IES Juan Jose Calvo Miguel</h3>
-									<p class="timeline-text">University of Applied Sciences in Cross Platform Application Development</p>
-									<ul>
-										<li>Using differents ways to save data and also accessing that data.</li>
-										<li>Using relational databases and their query language (SQL).</li>
-										<li>Interface development with Java swing and C#.</li>
-										<li>Managing enterprise resources plannings.</li>
-										<li>Android apps development.</li>
-										<li>Creating webpages with HTML, with CSS.</li>
-										<li>Using XML and validating them with DTD or XSD.</li>
-										<li>Using linux sistems.</li>
-										<li>High level for java development.</li>
-									</ul>
-									<strong>Skills:</strong>
+									<p class="timeline-text translate" data-key="section.fifth.studies"></p>
+									<ul class="translate" data-key="section.fifth.enumdesc"></ul>
+									<strong class="translate" data-key="section.fifth.skills"></strong>
 									<ul>
 										<li>Java</li>
 										<li>Eclipse</li>
@@ -389,7 +327,7 @@
 										<li>HTML5</li>
 										<li>Visual Studio</li>
 										<li>XML</li>
-										<li>Objet-Oriented Programming (OOP)</li>
+										<li class="translate" data-key="section.fifth.oop"></li>
 										<li>MySQL</li>
 										<li>Python</li>
 										<li>CSS</li>
@@ -400,14 +338,14 @@
 						<div class="section-footer animation-translate animation-item-2">
 							<a class="section-next goto-section" href="#section-06">
 								<span class="section-next-counter">05/09</span>
-								<span class="section-next-label">Next chapter</span>
+								<span class="section-next-label translate" data-key="general.nextchapter"></span>
 								<span class="section-next-icon"></span>
 							</a>
 						</div>
 					</section>
 					<section id="section-06" class="section animation">
 						<div class="section-body">
-							<h2 class="section-title animation-translate-overline animation-item-1">Testimonials</h2>
+							<h2 class="section-title animation-translate-overline animation-item-1 translate" data-key="section.sixth.title"></h2>
 							<div id="carousel" class="carousel slide animation-translate animation-item-2" data-ride="carousel">
 								<div class="carousel-inner">
 									<div class="carousel-item active">
@@ -493,34 +431,24 @@
 						<div class="section-footer animation-translate animation-item-3">
 							<a class="section-next goto-section" href="#section-07">
 								<span class="section-next-counter">06/10</span>
-								<span class="section-next-label">Next chapter</span>
+								<span class="section-next-label translate" data-key="general.nextchapter"></span>
 								<span class="section-next-icon"></span>
 							</a>
 						</div>
 					</section>
 					<section id="section-07" class="section animation">
 						<div class="section-body">
-							<h2 class="section-title animation-translate-overline animation-item-1">Projects</h2>
+							<h2 class="section-title animation-translate-overline animation-item-1 translate" data-key="section.seventh.title"></h2>
 							<div class="timeline timeline-animated">
 								<div class="timeline-item">
 									<span class="timeline-date">Feb 2016&nbsp;–&nbsp;Jun 2017</span>
 									<h3 class="timeline-title">The Learning Gemas - Erasmus+</h3>
-									<p class="timeline-text"><strong>Software Lead Developer</strong></p>
-									<p>
-										Our project proposes to develop a gamification system of educational delivery that taps into elements from the modern students 
-										real world experience and incorporate them into an integral framework that can be used to assess all kinds of learning 
-										(formal, primarily, but also informal and non-formal) within the classroom through the achievements the students make in their modules; 
-										a system that provides immediate and accessible feedback about performance and the level of mastery acquired and what needs to be learnt 
-										in order to progress; a system that improves teacher-student communication, and also student-student communication, 
-										a social dimension of learning, which is known to encourage deeper engagement with the activities.<br><br>
-
-										The overall objective is committing the students to change their attitude towards learning, 
-										increasing their motivation and consequently enabling them to achieve their full potential.
-									</p>
+									<p class="timeline-text"><strong class="translate" data-key="section.seventh.role"></strong></p>
+									<p class="translate" data-key="section.seventh.description"></p>
 									<div class="timeline-date">
 										<ul>
-											<li>Interface with HTML5 &amp; CSS and AngularJS for the behaviour of the app.</li>
-											<li>Database: Firebase.</li>
+											<li class="translate" data-key="section.seventh.interface"></li>
+											<li class="translate" data-key="section.seventh.database"></li>
 											<li>HTML framework : Ionic Framework.</li>
 										</ul>
 									</div>
@@ -530,22 +458,22 @@
 						<div class="section-footer animation-translate animation-item-3">
 							<a class="section-next goto-section" href="#section-08">
 								<span class="section-next-counter">07/09</span>
-								<span class="section-next-label">Next chapter</span>
+								<span class="section-next-label translate" data-key="general.nextchapter"></span>
 								<span class="section-next-icon"></span>
 							</a>
 						</div>
 					</section>
 					<section id="section-08" class="section animation">
 						<div class="section-body">
-							<h2 class="section-title animation-translate-overline animation-item-1">Licenses & Certifications</h2>
+							<h2 class="section-title animation-translate-overline animation-item-1 translate" data-key="section.eigth.title"></h2>
 							<div class="row animation-translate animation-item-2">
 								<div class="col-12 col-md-4">
 									<a class="card" href="https://www.udemy.com/certificate/UC-47fb71be-90ac-4a63-974f-70557549d3fa/" target="_blank">
 										<img class="card-img-top" src="assets/img/udemy_logo.png"  data-light-src="assets/img/udemy_logo_b.png"  data-dark-src="assets/img/udemy_logo.png" alt="Aprende PHP desde Cero - Nivel Básico">
 										<div class="card-body">
 											<h3 class="card-title">Aprende PHP desde Cero - Nivel Básico</h3>
-											<h4 class="card-subtitle"><strong>Skills:</strong>PHP</h4>
-											<p class="card-tags">Issued Jan 2024</p>
+											<h4 class="card-subtitle"><strong class="translate" data-key="section.fifth.skills"></strong>PHP</h4>
+											<p class="card-tags"><strong class="translate" style="font-weight: 700;" data-key="section.eigth.issued"></strong> <span class="translate" data-key="month.jan"></span> 2024</p>
 										</div>
 									</a>
 								</div>
@@ -554,8 +482,8 @@
 										<img class="card-img-top" src="assets/img/udemy_logo.png" data-light-src="assets/img/udemy_logo_b.png" data-dark-src="assets/img/udemy_logo.png" alt="PHP basics for beginners">
 										<div class="card-body">
 											<h3 class="card-title">PHP basics for beginners</h3>
-											<h4 class="card-subtitle"><strong>Skills:</strong>PHP</h4>
-											<p class="card-tags">Issued Jan 2024</p>
+											<h4 class="card-subtitle"><strong class="translate" data-key="section.fifth.skills"></strong>PHP</h4>
+											<p class="card-tags"><strong class="translate" style="font-weight: 700;" data-key="section.eigth.issued"></strong> <span class="translate" data-key="month.jan"></span> 2024</p>
 										</div>
 									</a>
 								</div>
@@ -564,8 +492,8 @@
 										<img class="card-img-top" src="assets/img/udemy_logo.png" data-light-src="assets/img/udemy_logo_b.png" data-dark-src="assets/img/udemy_logo.png" alt="PHP: Ultimate guide to PHP for everyone">
 										<div class="card-body">
 											<h3 class="card-title">PHP: Ultimate guide to PHP for everyone</h3>
-											<h4 class="card-subtitle"><strong>Skills:</strong>PHP</h4>
-											<p class="card-tags">Issued Jan 2024</p>
+											<h4 class="card-subtitle"><strong class="translate" data-key="section.fifth.skills"></strong>PHP</h4>
+											<p class="card-tags"><strong class="translate" style="font-weight: 700;" data-key="section.eigth.issued"></strong> <span class="translate" data-key="month.jan"></span> 2024</p>
 										</div>
 									</a>
 								</div>
@@ -574,8 +502,8 @@
 										<img class="card-img-top" src="assets/img/udemy_logo.png" data-light-src="assets/img/udemy_logo_b.png" data-dark-src="assets/img/udemy_logo.png" alt="Introducción Vue js 2 framework JAVASCRIPT desde CERO">
 										<div class="card-body">
 											<h3 class="card-title">Introducción Vue js 2 framework JAVASCRIPT desde CERO</h3>
-											<h4 class="card-subtitle"><strong>Skills:</strong>Vue.js</h4>
-											<p class="card-tags">Issued Oct 2021</p>
+											<h4 class="card-subtitle"><strong class="translate" data-key="section.fifth.skills"></strong>Vue.js</h4>
+											<p class="card-tags"><strong class="translate" style="font-weight: 700;" data-key="section.eigth.issued"></strong> Oct 2021</p>
 										</div>
 									</a>
 								</div>
@@ -584,18 +512,18 @@
 						<div class="section-footer animation-translate animation-item-3">
 							<a class="section-next goto-section" href="#section-09">
 								<span class="section-next-counter">08/09</span>
-								<span class="section-next-label">Next chapter</span>
+								<span class="section-next-label translate" data-key="general.nextchapter"></span>
 								<span class="section-next-icon"></span>
 							</a>
 						</div>
 					</section>
 					<section id="section-09" class="section animation">
 						<div class="section-body">
-							<h2 class="section-title animation-translate-overline animation-item-1">Contact</h2>
+							<h2 class="section-title animation-translate-overline animation-item-1 translate" data-key="section.nine.title"></h2>
 							<div class="row mb-10 animation-translate animation-item-2">
 								<div class="col-12 col-md-6">
 									<div class="contact">
-										<strong class="contact-label">Stay in touch</strong>
+										<strong class="contact-label translate" data-key="section.nine.intouch"></strong>
 										<a href="mailto:elvis.al.95@gmail.com">elvis.al.95@gmail.com</a><br>
 										<a href="tel:+34665961749">+34 665 96 17 49</a>
 									</div>
@@ -678,15 +606,15 @@
 									<li>Spring MVC</li>
 									<li>Spring Batch</li>
 									<li>Spring Boot</li>
-									<li>Microservices based on Srpgin Batch and Sring Boot</li>
+									<li class="translate" data-key="modals.java.microservices"></li>
 									<li>JPA</li>
                                 </ul>
 								<h4>IDEs</h4>
 								<ul>
-                                    <li>Visual Studio</li>
-									<li>Visual Studio</li>
+                                    <li>Netbeans</li>
+									<li>Eclipse</li>
                                 </ul>
-								<h4>Others</h4>
+								<h4 class="translate" data-key="modals.java.others"></h4>
 								<ul>
 									<li>Maven</li>
 									<li>RESTful Webservices</li>
@@ -723,7 +651,7 @@
 									<li>Ajax</li>
 									<li>ExtJs</li>
                                 </ul>
-								<h4>Text Editors</h4>
+								<h4 class="translate" data-key="modals.js.texteditor"></h4>
 								<ul>
                                     <li>Visual Studio Code</li>
 									<li>Sublime Text 3</li>
@@ -743,6 +671,7 @@
 	</div>
 </body>
 <script src="dist/js/all.js"></script>
+<script src="dist/js/i18n.js"></script>
 <script>
 	$(function () {
 		$('[data-toggle="tooltip"]').tooltip();
@@ -776,6 +705,7 @@
 	})();
 
 	document.addEventListener("DOMContentLoaded", function() {
+		changeLanguage('en');
 		var year = 2018; // El año desde el que quieres calcular
 		var date = new Date();
 		var currentYear = date.getFullYear();
