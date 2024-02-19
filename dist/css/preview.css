@@ -38,3 +38,12 @@
 	border-color: #9fbbff;
 	background-color: #000;
 }
+
+.flag-button {
+	background: none;
+    border: none;
+}
+
+.flag-button:focus {
+	outline: none;
+}
