@@ -1,6 +1,11 @@
 // traducciones.js
 var translates = {
     es: {
+      download : `
+        <a href="assets/docs/CV_Spanish.pdf" id="download-cv" class="button-cv">
+          <img src="assets/img/download_b.png" data-light-src="assets/img/download.png" data-dark-src="assets/img/download_b.png"/>
+        </a>
+      `,
       general: {
         nextchapter: "Siguiente Capitulo"
       },
@@ -129,6 +134,11 @@ var translates = {
       },
     },
     en: {
+      download : `
+        <a href="assets/docs/CV_English.pdf" id="download-cv" class="button-cv">
+          <img src="assets/img/download_b.png" data-light-src="assets/img/download.png" data-dark-src="assets/img/download_b.png"/>
+        </a>
+      `,
       general: {
         nextchapter: "Next Chapter"
       },

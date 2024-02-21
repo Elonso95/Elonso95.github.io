@@ -47,3 +47,18 @@
 .flag-button:focus {
 	outline: none;
 }
+
+.button-cv {
+	display: inline-block;
+	padding: 10px 20px;
+	font-size: 20px;
+	color: #fff;
+	background-color: transparent;
+	border: none;
+	border-radius: 5px;
+	text-decoration: none;
+}
+.button-cv img {
+	height: 20px;
+	margin-right: 10px;
+}
