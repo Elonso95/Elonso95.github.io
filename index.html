@@ -11,17 +11,19 @@
 	<title>Elvis Alonso Lueje | Portfolio</title>
 </head>
 <body class="with-header position-relative" data-spy="scroll" data-target="#sections-nav" data-offset="80">
-	<script>
-		
-	</script>
 	<header class="header">
 		<div class="container-fluid-limited d-flex align-items-center justify-content-between">
 			<a href="index.html" class="header-brand">
 				<img src="assets/img/logo_b.svg" data-light-src="assets/img/logo.svg" data-dark-src="assets/img/logo_b.svg">
 			</a>
 			<div>
-				<button class="flag-button" onclick="changeLanguage('en')" style=""><img src="assets/img/uk_flag.png" alt="English"></button>
-				<button class="flag-button" onclick="changeLanguage('es')"><img src="assets/img/spain_flag.png" alt="English"></button>
+				<div class="translate" style="display:contents;" data-key="download">
+					<a href="assets/docs/CV_English.pdf" download class="button-cv">
+						<img src="assets/img/download_b.png" data-light-src="assets/img/download.png" data-dark-src="assets/img/download_b.png"/>
+					</a>
+				</div>
+				<button class="flag-button" onclick="changeLanguage('en')"><img src="assets/img/uk_flag.png" alt="English"></button>
+				<button class="flag-button" onclick="changeLanguage('es')"><img src="assets/img/spain_flag.png" alt="Spanish"></button>
 			</div>
 			<button class="sections-nav-toggler" aria-label="Toggle navigation">
 				<span class="sections-nav-toggler-bar"></span>
@@ -351,6 +353,33 @@
 									<div class="carousel-item active">
 										<div class="testimonial">
 											<div class="testimonial-body">
+												<h3 class="testimonial-title">Rafael Camarena Samper</h3>
+												<h4 class="testimonial-subtitle"><a href="https://www.linkedin.com/in/alexiscv?locale=en_US" target="_blank">Linkedin</a></h4>
+												<p class="testimonial-text">
+													Ha sido una verdadera suerte colaborar con Elvis durante los más de dos años en los que coincidimos trabajando para el mismo cliente.
+													A lo largo de este tiempo, he tenido el placer de aprender de él por su dominio en tecnologías como Java y JS. 
+													Elvis ha demostrado ser un gran compañero, compartiendo su conocimiento y experiencia conmigo, lo que me ha permitido enriquecer mis habilidades en estas áreas.
+													Es el tipo de colega que hace que los momentos de pausa sean mas amenos gracias a su conversación y alegría.
+													Estoy convencido de que su dedicación, habilidades y actitud positiva serán igualmente apreciadas en cualquier proyecto o equipo que tenga la suerte de contar con él.
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="carousel-item">
+										<div class="testimonial">
+											<div class="testimonial-body">
+												<h3 class="testimonial-title">Adolfo Israel Moreno Barbero</h3>
+												<h4 class="testimonial-subtitle"><a href="https://www.linkedin.com/in/adolfoisraelmoreno" target="_blank">Linkedin</a></h4>
+												<p class="testimonial-text">
+													Es una persona muy comprometida con sus tareas y tiene una gran vocacion por la profesión. 
+													Siempre da todo para cumplir sus objetivos. Es un orgullo trabajar con el.
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="carousel-item">
+										<div class="testimonial">
+											<div class="testimonial-body">
 												<h3 class="testimonial-title">Alexis Castaño</h3>
 												<h4 class="testimonial-subtitle"><a href="https://www.linkedin.com/in/alexiscv?locale=en_US" target="_blank">Linkedin</a></h4>
 												<p class="testimonial-text">
@@ -606,6 +635,7 @@
 									<li>Spring MVC</li>
 									<li>Spring Batch</li>
 									<li>Spring Boot</li>
+									<li>Spring Cache</li>
 									<li class="translate" data-key="modals.java.microservices"></li>
 									<li>JPA</li>
                                 </ul>
