@@ -18,12 +18,9 @@
 			</a>
 			<div>
 				<div class="translate" style="display:contents;" data-key="download">
-					<a href="assets/docs/CV_English.pdf" download class="button-cv">
-						<img src="assets/img/download_b.png" data-light-src="assets/img/download.png" data-dark-src="assets/img/download_b.png"/>
-					</a>
 				</div>
-				<button class="flag-button" onclick="changeLanguage('en')"><img src="assets/img/uk_flag.png" alt="English"></button>
-				<button class="flag-button" onclick="changeLanguage('es')"><img src="assets/img/spain_flag.png" alt="Spanish"></button>
+				<button class="flag-button" onclick="callToChangeLanguage('en')"><img src="assets/img/uk_flag.png" alt="English"></button>
+				<button class="flag-button" onclick="callToChangeLanguage('es')"><img src="assets/img/spain_flag.png" alt="Spanish"></button>
 			</div>
 			<button class="sections-nav-toggler" aria-label="Toggle navigation">
 				<span class="sections-nav-toggler-bar"></span>
@@ -694,15 +691,16 @@
 		</div>
 	</div>
 	<div class="preview-themes">
-		<a href="#theme-yellow-black" class="preview-theme preview-color-yellow-black" title="Select theme" data-toggle="tooltip" data-theme="dist/css/yellow-black.css" data-theme-bg="light"></a>
-		<a href="#theme-black-white" class="preview-theme preview-color-black-white" title="Select theme" data-toggle="tooltip" data-theme="dist/css/black-white.css" data-theme-bg="dark"></a>
-		<a href="#theme-pink-black" class="preview-theme preview-color-pink-black" title="Select theme" data-toggle="tooltip" data-theme="dist/css/pink-black.css" data-theme-bg="light"></a>
-		<a href="#theme-blue-black" class="preview-theme preview-color-blue-black" title="Select theme" data-toggle="tooltip" data-theme="dist/css/blue-black.css" data-theme-bg="light"></a>
+		<a href="#theme-yellow-black" class="preview-theme preview-color-yellow-black" title="Select theme" data-toggle="tooltip" data-theme="dist/css/yellow-black.css" data-theme-bg="light" onclick="changeIconDownload('light')"></a>
+		<a href="#theme-black-white" class="preview-theme preview-color-black-white" title="Select theme" data-toggle="tooltip" data-theme="dist/css/black-white.css" data-theme-bg="dark" onclick="changeIconDownload('dark')"></a>
+		<a href="#theme-pink-black" class="preview-theme preview-color-pink-black" title="Select theme" data-toggle="tooltip" data-theme="dist/css/pink-black.css" data-theme-bg="light" onclick="changeIconDownload('light')"></a>
+		<a href="#theme-blue-black" class="preview-theme preview-color-blue-black" title="Select theme" data-toggle="tooltip" data-theme="dist/css/blue-black.css" data-theme-bg="light" onclick="changeIconDownload('light')"></a>
 	</div>
 </body>
 <script src="dist/js/all.js"></script>
 <script src="dist/js/i18n.js"></script>
 <script>
+	var darkTheme = false;
 	$(function () {
 		$('[data-toggle="tooltip"]').tooltip();
 
@@ -715,32 +713,6 @@
 
 			return false;
 		});
-	});
-
-	// Bootstrap form validation example
-	(function() {
-		'use strict';
-		window.addEventListener('load', function() {
-			var forms = document.getElementsByClassName('needs-validation');
-			var validation = Array.prototype.filter.call(forms, function(form) {
-				form.addEventListener('submit', function(event) {
-					if (form.checkValidity() === false) {
-						event.preventDefault();
-						event.stopPropagation();
-					}
-					form.classList.add('was-validated');
-				}, false);
-			});
-		}, false);
-	})();
-
-	document.addEventListener("DOMContentLoaded", function() {
-		changeLanguage('en');
-		var year = 2018; // El año desde el que quieres calcular
-		var date = new Date();
-		var currentYear = date.getFullYear();
-		var yearsPassed = currentYear - year;
-		document.getElementById("years").innerHTML = yearsPassed;
 	});
 </script>
 </html>

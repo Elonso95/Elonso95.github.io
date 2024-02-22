@@ -2,8 +2,8 @@
 var translates = {
     es: {
       download : `
-        <a href="assets/docs/CV_Spanish.pdf" id="download-cv" class="button-cv">
-          <img src="assets/img/download_b.png" data-light-src="assets/img/download.png" data-dark-src="assets/img/download_b.png"/>
+        <a href="assets/docs/CV_Spanish.pdf" download class="button-cv">
+          <img id="download-icon" src="assets/img/download.png"/>
         </a>
       `,
       general: {
@@ -31,7 +31,7 @@ var translates = {
         second: {
           title: "Acerca de mi",
           about: `<p>
-                Soy un desarrollador de software con más de 6 años de experiencia en Java y Spring, y con conocimientos de Vue y Angular. 
+                Soy un desarrollador de software con más de <span id="years"></span> años de experiencia en Java y Spring, y con conocimientos de Vue y Angular. 
                 Me apasiona crear soluciones innovadoras y eficientes para diferentes sectores.
             </p>
             <p>
@@ -135,8 +135,8 @@ var translates = {
     },
     en: {
       download : `
-        <a href="assets/docs/CV_English.pdf" id="download-cv" class="button-cv">
-          <img src="assets/img/download_b.png" data-light-src="assets/img/download.png" data-dark-src="assets/img/download_b.png"/>
+        <a href="assets/docs/CV_English.pdf" download class="button-cv">
+          <img id="download-icon" src="assets/img/download.png"/>
         </a>
       `,
       general: {
