@@ -18351,33 +18351,3 @@ $(function () {
 		});
 	}, false);
 });
-
-function callToChangeLanguage(language) {
-	changeLanguage(language);
-	var year = 2018; // El año desde el que quieres calcular
-	var date = new Date();
-	var currentYear = date.getFullYear();
-	var yearsPassed = currentYear - year;
-	document.getElementById("years").innerHTML = yearsPassed;
-	var iconPath = darkTheme ? 'assets/img/download.png' : 'assets/img/download_b.png';
-	document.getElementById('download-icon').src = iconPath;
-}
-
-function changeIconDownload(theme) {
-	if(theme === 'light') {
-		darkTheme = false;
-	} else {
-		darkTheme = true;
-	}
-	var iconPath = darkTheme ? 'assets/img/download.png' : 'assets/img/download_b.png';
-	document.getElementById('download-icon').src = iconPath;
-}
-
-document.addEventListener("DOMContentLoaded", function() {
-	callToChangeLanguage('en');
-	var year = 2018; // El año desde el que quieres calcular
-	var date = new Date();
-	var currentYear = date.getFullYear();
-	var yearsPassed = currentYear - year;
-	document.getElementById("years").innerHTML = yearsPassed;
-});
