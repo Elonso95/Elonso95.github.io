@@ -93,9 +93,36 @@ var translates = {
           title: "Educación"
         },
         sixth: {
-          title: "Referencias"
+          languages: `
+            <article class="article animation-translate animation-item-2 transalate" data-key="section.sixth.languages">
+              <strong>Español (Nativo)</strong>
+              <div class="progress progress-animated mb-9">
+                <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <strong>Ingles</strong>
+              <div class="progress progress-animated mb-9">
+                <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <p style="margin-top: -5%;">
+                Mi formación de inglés comenzó con el sistema educativo español, pero fue en mi primer viaje a los Paises Bajos donde experimenté un gran avance en este idioma. 
+                Allí trabajé como voluntario en un hostal durante un mes y conocí a gente de todo el mundo que hablaba inglés con fluidez. 
+                Eso me inspiró a querer dominar el idioma yo también. Desde entonces, he adaptado mi entorno para rodearme de inglés, viendo películas y series, 
+                escuchando música y podcasts, leyendo libros y artículos, y haciendo cursos y proyectos de otros ámbitos, pero en inglés.
+              </p>
+              <p>
+                He viajado por países como Paises Bajos, Dinamarca, Hungría, Estonia, Rumanía, Bulgaria… Donde, a pesar de que el inglés no es su lengua oficial, 
+                he tenido que usarlo para hacer todo tipo de cosas, desde reservar un alojamiento hasta pedir en un restaurante o bar. Aunque no tengo una 
+                titulación oficial que lo certifique, puedo demostrar mi nivel de inglés con facilidad, ya que no me cuesta entablar una conversación y 
+                siempre busco oportunidades para mejorar mi inglés.
+              </p>
+            </article>
+          `,
+          title: "Idiomas",
         },
         seventh: {
+          title: "Referencias"
+        },
+        eigth: {
           database: "Base de Datos: Firebase.",
           description: `
             Nuestro proyecto propone desarrollar un sistema de gamificación de la entrega educativa que aprovecha elementos de la experiencia real de los estudiantes modernos e 
@@ -111,24 +138,25 @@ var translates = {
           role: "Desarrollador Líder de Software",
           title: "Proyectos"
         },
-        eigth: {
+        nine: {
           issued: "Expedido",
           title: "Licencias y Certificados"
         },
-        nine: {
+        ten: {
           intouch: "Manten el contacto",
           title: "Contacto"
         }
       },
       sidemenu: {
         about: "<span class=\"sections-nav-counter\">02</span>Acerca de mi",
-        contact: "<span class=\"sections-nav-counter\">09</span>Contacto",
+        contact: "<span class=\"sections-nav-counter\">10</span>Contacto",
         education: "<span class=\"sections-nav-counter\">05</span>Educación",
         experiences: "<span class=\"sections-nav-counter\">03</span>Experiencia Laboral",
-        licences: "<span class=\"sections-nav-counter\">08</span>Licencias y Certificados",
-        projects: "<span class=\"sections-nav-counter\">07</span>Proyectos",
+        languages: "<span class=\"sections-nav-counter\">06</span>Idiomas",
+        licences: "<span class=\"sections-nav-counter\">09</span>Licencias y Certificados",
+        projects: "<span class=\"sections-nav-counter\">08</span>Proyectos",
         skills: "<span class=\"sections-nav-counter\">04</span>Habilidades",
-        testimonials: "<span class=\"sections-nav-counter\">06</span>Referencias",
+        testimonials: "<span class=\"sections-nav-counter\">07</span>Referencias",
         top: "<span class=\"sections-nav-counter\">01</span>Inicio",
         descripcion: "Esto es una descripción"
       },
@@ -224,9 +252,35 @@ var translates = {
           title: "Education"
         },
         sixth: {
-          title: "Testimonials"
+          languages: `
+            <article class="article animation-translate animation-item-2 transalate" data-key="section.sixth.languages">
+              <strong>Spanish (Native)</strong>
+              <div class="progress progress-animated mb-9">
+                <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <strong>English</strong>
+              <div class="progress progress-animated mb-9">
+                <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <p style="margin-top: -5%;">
+                My English training started with the Spanish educational system, but it was on my first trip to the Netherlands where I experienced a great improvement in this language. 
+                There I worked as a volunteer in a hostel for a month and met people from all over the world who spoke English fluently. That inspired me to want to master 
+                the language too. Since then, I have adapted my environment to surround myself with English, watching movies and series, listening to music and podcasts, 
+                reading books and articles, and doing courses and projects in other fields, but in English.
+              </p>
+              <p>
+                I have traveled to countries such as the Netherlands, Denmark, Hungary, Estonia, Romania, Bulgaria… Where, despite the fact that English is not their official language, 
+                I have had to use it to do all kinds of things, from booking accommodation to ordering in a restaurant or bar. Although I do not have an official certification 
+                that proves it, I can demonstrate my level of English easily, as I have no trouble starting a conversation and I always look for opportunities to improve my English.
+              </p>
+            </article>
+          `,
+          title: "Languages",
         },
         seventh: {
+          title: "Testimonials"
+        },
+        eigth: {
           database: "Database: Firebase.",
           description: `
             Our project proposes to develop a gamification system of educational delivery that taps into elements from the modern students 
@@ -243,24 +297,25 @@ var translates = {
           role: "Software Lead Developer",
           title: "Projects"
         },
-        eigth: {
+        nine: {
           issued: "Issued",
           title: "Licenses & Certifications"
         },
-        nine: {
+        ten: {
           intouch: "Stay in touch",
           title: "Contact"
         }
       },
       sidemenu: {
         about: "<span class=\"sections-nav-counter\">02</span>About me",
-        contact: "<span class=\"sections-nav-counter\">09</span>Contact",
+        contact: "<span class=\"sections-nav-counter\">10</span>Contact",
         education: "<span class=\"sections-nav-counter\">05</span>Education",
         experiences: "<span class=\"sections-nav-counter\">03</span>Experiences",
-        licences: "<span class=\"sections-nav-counter\">08</span>Licences & Certifications",
-        projects: "<span class=\"sections-nav-counter\">07</span>Projects",
+        licences: "<span class=\"sections-nav-counter\">09</span>Licences & Certifications",
+        languages: "<span class=\"sections-nav-counter\">06</span>Languages",
+        projects: "<span class=\"sections-nav-counter\">08</span>Projects",
         skills: "<span class=\"sections-nav-counter\">04</span>Skills",
-        testimonials: "<span class=\"sections-nav-counter\">06</span>Testimonials",
+        testimonials: "<span class=\"sections-nav-counter\">07</span>Testimonials",
         top: "<span class=\"sections-nav-counter\">01</span>Top",
         descripcion: "This is a description"
       },
