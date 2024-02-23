@@ -62,3 +62,12 @@
 	height: 20px;
 	margin-right: 10px;
 }
+
+section#section-09 img.card-img-top {
+    max-height: 200px;
+    height: 200px;
+}
+
+section#section-09 h3.card-title {
+	text-align: center;
+}
