@@ -71,3 +71,13 @@ section#section-09 img.card-img-top {
 section#section-09 h3.card-title {
 	text-align: center;
 }
+
+section#section-04 a.card {
+    display: inline-block;
+}
+
+section#section-04 img.card-img-top {
+    height: 5%;
+    width: 5%;
+    margin-bottom: 2%;
+}
