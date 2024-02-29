@@ -31,31 +31,19 @@ var translates = {
         second: {
           title: "Acerca de mi",
           about: `<p>
-                Soy un desarrollador de software con más de <span id="years"></span> años de experiencia en Java y Spring, y con conocimientos de Vue y Angular. 
-                Me apasiona crear soluciones innovadoras y eficientes para diferentes sectores.
+                Soy un desarrollador de software con más de 6 años de experiencia en Java y Spring, y con conocimientos de otros lenguajes y frameworks web, 
+                como Vue, Angular, C#, Python, HTML, CSS y Bootstrap. Me apasiona crear soluciones innovadoras y eficientes para diferentes sectores, 
+                utilizando bases de datos relacionales y servicios y APIs como REST, SOAP, OAuth y JWT.
             </p>
             <p>
-                Mi formación en Java comenzó en la Formación Profesional (FP) de Desarrollo de Aplicaciones Web de nivel superior, 
-                donde tuve la oportunidad de participar en un proyecto Erasmus+ junto con otros estudiantes de diferentes países europeos. 
-                Desarrollamos una aplicación web con AngularJS y Firebase para promover el aprendizaje en el aula a través de la gamificación. 
-                Fue una experiencia muy enriquecedora, tanto técnicamente como personalmente. 
-                Durante mis estudios, también aprendí los fundamentos de otros lenguajes, como C# y Python.
-            </p>
-            <p>
-                Desde que entré en el mundo laboral, he trabajado para varias empresas, utilizando diferentes frameworks web de Java, 
-                pero especialmente Spring Framework y Spring Boot. Pude participar en el desarrollo de aplicaciones web robustas y escalables, utilizando 
-                bases de datos relacionales como MySQL y Oracle. Además, he integrado diferentes servicios y APIs, como REST, SOAP, OAuth y JWT.
-            </p>
-            <p>
-                Además de Java, he aprendido a usar otros lenguajes y herramientas para crear interfaces atractivas y funcionales. 
-                Algunos de los frameworks que he utilizado son Vue y Angular, que facilitan el desarrollo de componentes reutilizables y dinámicos. 
-                Para implementar diseños responsivos y adaptativos, he utilizado HTML, CSS y Bootstrap y, para gestionar 
-                el entorno de desarrollo y las dependencias de las aplicaciones web, he hecho uso de Node.js y NPM.
+                Mi formación en Java comenzó en la FP de Desarrollo de Aplicaciones Web de nivel superior, donde participé en un proyecto Erasmus+ junto 
+                con otros estudiantes de diferentes países europeos. Desarrollamos una aplicación web con AngularJS y Firebase para promover el aprendizaje en 
+                el aula a través de la gamificación. Fue una experiencia muy enriquecedora, tanto técnicamente como personalmente.
             </p>
             <p>
                 Mi objetivo como desarrollador es nunca dejar de aprender y mejorar, y mantenerme al día con las nuevas tecnologías y metodologías. 
-                Estoy motivado para trabajar en proyectos que supongan un desafío y una oportunidad de crecimiento. 
-                Además, soy una persona curiosa y creativa comprometida con mi trabajo que también disfruta trabajando en equipo y compartiendo ideas y conocimientos.
+                Estoy motivado para trabajar en proyectos que supongan un desafío y una oportunidad de crecimiento. Además, soy una persona curiosa y creativa, 
+                comprometida con mi trabajo y que disfruta trabajando en equipo y compartiendo ideas y conocimientos.
             </p>`
         },
         third: {
@@ -193,29 +181,19 @@ var translates = {
         second: {
           title: "About me",
           about: `<p>
-                I am a software developer with over <span id="years"></span> years of experience in Java and Spring, and with knowledge of Vue and Angular.
-                I am passionate about creating innovative and efficient solutions for different sectors.
+                I am a software developer with more than 6 years of experience in Java and Spring, and with knowledge of other languages and web frameworks, 
+                such as Vue, Angular, C#, Python, HTML, CSS and Bootstrap. I am passionate about creating innovative and efficient solutions for different sectors, 
+                using relational databases and services and APIs such as REST, SOAP, OAuth and JWT.
             </p>
             <p>
-                My training in Java began in the higher-level Vocational Training (FP) in Web Application Development, where I had the opportunity to participate in an Erasmus+ project along with other students from different European countries. 
-                We developed a web application with AngularJS and Firebase to promote classroom learning through gamification. 
-                It was a very enriching experience, both technically and personally. 
-                During my studies, I also learned the fundamentals of other languages, such as C# and Python.
+                My training in Java began in the FP of Web Application Development of higher level, where I participated in an Erasmus+ project together 
+                with other students from different European countries. We developed a web application with AngularJS and Firebase to promote learning in the 
+                classroom through gamification. It was a very enriching experience, both technically and personally.
             </p>
             <p>
-                Since I entered the working world, I have worked for various companies, using different Java web frameworks, but especially Spring Framework and Spring Boot. 
-                I was able to participate in the development of robust and scalable web applications, using relational databases such as MySQL and Oracle. 
-                In addition, I have integrated different services and APIs, such as REST, SOAP, OAuth, and JWT.
-            </p>
-            <p>
-                In addition to Java, I have learned to use other languages and tools to create attractive and functional interfaces. 
-                Some of the frameworks I have used are Vue and Angular, which facilitate the development of reusable and dynamic components. 
-                To implement responsive and adaptive designs, I have used HTML, CSS, and Bootstrap and, to manage the development environment and the dependencies of web applications, I have made use of Node.js and NPM.
-            </p>
-            <p>
-                My goal as a developer is to never stop learning and improving, and to stay up-to-date with new technologies and methodologies. 
-                I am motivated to work on projects that pose a challenge and an opportunity for growth. 
-                In addition, I am a curious, creative person committed to my work who also enjoys working in a team and sharing ideas and knowledge. 
+                My goal as a developer is to never stop learning and improving, and to keep up to date with new technologies and methodologies. 
+                I am motivated to work on projects that pose a challenge and an opportunity for growth. In addition, I am a curious and creative person, 
+                committed to my work and who enjoys working in a team and sharing ideas and knowledge.
             </p>`
         },
         third: {
