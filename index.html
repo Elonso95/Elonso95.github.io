@@ -17,8 +17,6 @@
 				<img src="assets/img/logo_b.svg" data-light-src="assets/img/logo.svg" data-dark-src="assets/img/logo_b.svg">
 			</a>
 			<div>
-				<div class="translate" style="display:contents;" data-key="download">
-				</div>
 				<button class="flag-button" onclick="callToChangeLanguage('en')"><img src="assets/img/uk_flag.png" alt="English"></button>
 				<button class="flag-button" onclick="callToChangeLanguage('es')"><img src="assets/img/spain_flag.png" alt="Spanish"></button>
 			</div>
@@ -80,6 +78,8 @@
 								<img src="assets/img/avatar.jpg" class="jumbotron-img animation-translate animation-item-1" alt="Avatar">
 								<h1 class="display-1 display-animated display-animated-in animation-translate animation-item-2">Elvis<br>Alonso<br>Lueje</h1>
 								<p class="lead animation-translate animation-item-3 translate" data-key="section.one.role"></p>
+								<div class="translate" style="display:contents;" data-key="download">
+								</div>
 							</div>
 						</div>
 						<div class="section-footer animation-translate animation-item-4">
@@ -381,7 +381,10 @@
 							<div class="timeline timeline-animated">
 								<div class="timeline-item">
 									<span class="timeline-date">2015&nbsp;–&nbsp;2017</span>
-									<h3 class="timeline-title">IES Juan Jose Calvo Miguel</h3>
+									<div class="d-flex flex-md-row flex-column align-items-md-center">
+										<h3 class="timeline-title">IES Juan Jose Calvo Miguel</h3>
+										<a class="text-left text-md-center ml-md-2 font-weight-bold translate" href="#certification-modal" data-toggle="modal" data-key="section.fifth.viewcert"></a>
+									</div>
 									<p class="timeline-text translate" data-key="section.fifth.studies"></p>
 									<ul class="translate" data-key="section.fifth.enumdesc"></ul>
 									<strong class="translate" data-key="section.fifth.skills"></strong>
@@ -556,7 +559,7 @@
 							<div class="timeline timeline-animated">
 								<div class="timeline-item">
 									<span class="timeline-date">Feb 2016&nbsp;–&nbsp;Jun 2017</span>
-									<h3 class="timeline-title">The Learning Gemas - Erasmus+</h3>
+									<h3 class="timeline-title">The Learning Games - Erasmus+</h3>
 									<p class="timeline-text"><strong class="translate" data-key="section.eigth.role"></strong></p>
 									<p class="translate" data-key="section.eigth.description"></p>
 									<div class="timeline-date">
@@ -823,11 +826,25 @@
 			</div>
 		</div>
 	</div>
+	<div id="certification-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modal" aria-hidden="true">
+		<div class="modal-dialog modal-fluid" style="margin-top: 4%;">
+			<div class="modal-content modal-content-subskill">
+				<div class="modal-header">
+					<button type="button" class="modal-close" data-dismiss="modal" aria-label="Close">
+						<span class="d-none">×</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<img class="img-fluid" src="assets/docs/certificate.jpg" alt="My certification">
+				</div>
+			</div>
+		</div>
+	</div>
 	<div class="preview-themes">
-		<a href="#theme-yellow-black" class="preview-theme preview-color-yellow-black" title="Select theme" data-toggle="tooltip" data-theme="dist/css/yellow-black.css" data-theme-bg="light" onclick="changeIconDownload('light')"></a>
-		<a href="#theme-black-white" class="preview-theme preview-color-black-white" title="Select theme" data-toggle="tooltip" data-theme="dist/css/black-white.css" data-theme-bg="dark" onclick="changeIconDownload('dark')"></a>
-		<a href="#theme-pink-black" class="preview-theme preview-color-pink-black" title="Select theme" data-toggle="tooltip" data-theme="dist/css/pink-black.css" data-theme-bg="light" onclick="changeIconDownload('light')"></a>
-		<a href="#theme-blue-black" class="preview-theme preview-color-blue-black" title="Select theme" data-toggle="tooltip" data-theme="dist/css/blue-black.css" data-theme-bg="light" onclick="changeIconDownload('light')"></a>
+		<a href="#theme-yellow-black" class="preview-theme preview-color-yellow-black" title="Select theme" data-toggle="tooltip" data-theme="dist/css/yellow-black.css" data-theme-bg="light" onclick="changeDownload('light')"></a>
+		<a href="#theme-black-white" class="preview-theme preview-color-black-white" title="Select theme" data-toggle="tooltip" data-theme="dist/css/black-white.css" data-theme-bg="dark" onclick="changeDownload('dark')"></a>
+		<a href="#theme-pink-black" class="preview-theme preview-color-pink-black" title="Select theme" data-toggle="tooltip" data-theme="dist/css/pink-black.css" data-theme-bg="light" onclick="changeDownload('light')"></a>
+		<a href="#theme-blue-black" class="preview-theme preview-color-blue-black" title="Select theme" data-toggle="tooltip" data-theme="dist/css/blue-black.css" data-theme-bg="light" onclick="changeDownload('light')"></a>
 	</div>
 </body>
 <script src="dist/js/all.js"></script>
@@ -849,23 +866,21 @@
 	});
 	function callToChangeLanguage(language) {
 		changeLanguage(language);
+		changeDownload();
 		var year = 2018; // El año desde el que quieres calcular
 		var date = new Date();
 		var currentYear = date.getFullYear();
 		var yearsPassed = currentYear - year;
 		document.getElementById("years").innerHTML = yearsPassed;
-		var iconPath = darkTheme ? 'assets/img/download.png' : 'assets/img/download_b.png';
-		document.getElementById('download-icon').src = iconPath;
 	}
-
-	function changeIconDownload(theme) {
+	function changeDownload(theme) {
 		if(theme === 'light') {
 			darkTheme = false;
-		} else {
+		} else if(theme === 'dark') {
 			darkTheme = true;
 		}
-		var iconPath = darkTheme ? 'assets/img/download.png' : 'assets/img/download_b.png';
-		document.getElementById('download-icon').src = iconPath;
+		var classHiperlink = darkTheme ? 'button-cv-dark' : 'button-cv';
+		document.getElementById('download-hiperlink').className = classHiperlink;
 	}
 
 	document.addEventListener("DOMContentLoaded", function() {

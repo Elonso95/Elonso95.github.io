@@ -2,8 +2,8 @@
 var translates = {
     es: {
       download : `
-        <a href="assets/docs/CV_Spanish.pdf" download class="button-cv">
-          <img id="download-icon" src="assets/img/download.png"/>
+        <a id="download-hiperlink" href="assets/docs/CV_Spanish.pdf" download class="button-cv">
+          Descargar CV
         </a>
       `,
       general: {
@@ -90,7 +90,8 @@ var translates = {
           oop: "Programación Orientada a Objetos",
           skills: "Habilidades:",
           studies: "Técnico Superior en Desarrollo de Aplicaciones Multiplataforma",
-          title: "Educación"
+          title: "Educación",
+          viewcert: "Ver certificado"
         },
         sixth: {
           languages: `
@@ -163,8 +164,8 @@ var translates = {
     },
     en: {
       download : `
-        <a href="assets/docs/CV_English.pdf" download class="button-cv">
-          <img id="download-icon" src="assets/img/download.png"/>
+        <a id="download-hiperlink" href="assets/docs/CV_English.pdf" download class="button-cv">
+          Download CV
         </a>
       `,
       general: {
@@ -249,7 +250,8 @@ var translates = {
           oop: "Object-Oriented Programming (OOP)",
           skills: "Skills:",
           studies: "University of Applied Sciences in Cross Platform Application Development",
-          title: "Education"
+          title: "Education",
+          viewcert: "See certification"
         },
         sixth: {
           languages: `
