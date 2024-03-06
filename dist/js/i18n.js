@@ -31,7 +31,7 @@ var translates = {
         second: {
           title: "Acerca de mi",
           about: `<p>
-                Soy un desarrollador de software con más de 6 años de experiencia en Java y Spring, y con conocimientos de otros lenguajes y frameworks web, 
+                Soy un desarrollador de software con más de <span id="years"></span> años de experiencia en Java y Spring, y con conocimientos de otros lenguajes y frameworks web, 
                 como Vue, Angular, C#, Python, HTML, CSS y Bootstrap. Me apasiona crear soluciones innovadoras y eficientes para diferentes sectores, 
                 utilizando bases de datos relacionales y servicios y APIs como REST, SOAP, OAuth y JWT.
             </p>
@@ -181,7 +181,7 @@ var translates = {
         second: {
           title: "About me",
           about: `<p>
-                I am a software developer with more than 6 years of experience in Java and Spring, and with knowledge of other languages and web frameworks, 
+                I am a software developer with more than <span id="years"></span> years of experience in Java and Spring, and with knowledge of other languages and web frameworks, 
                 such as Vue, Angular, C#, Python, HTML, CSS and Bootstrap. I am passionate about creating innovative and efficient solutions for different sectors, 
                 using relational databases and services and APIs such as REST, SOAP, OAuth and JWT.
             </p>
