@@ -20,6 +20,7 @@ var translates = {
       },
       month: {
         jan: "Ene",
+        mar: "Mar",
         apr: "Abr",
         aug: "Ago",
         dec: "Dic"
@@ -170,6 +171,7 @@ var translates = {
       },
       month: {
         jan: "Jan",
+        mar: "Mar",
         apr: "Apr",
         aug: "Aug",
         dec: "Dic"
