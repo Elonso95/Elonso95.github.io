@@ -1002,7 +1002,14 @@
 	}
 
 	document.addEventListener("DOMContentLoaded", function() {
-		callToChangeLanguage('en');
+		var userLanguage = navigator.language || navigator.userLanguage;
+		if(userLanguage.includes('es')) {
+			callToChangeLanguage('es');
+		} else if (userLanguage.includes('en')){
+			callToChangeLanguage('en');
+		} else {
+			callToChangeLanguage('en');
+		}
 		var year = 2018; // El año desde el que quieres calcular
 		var date = new Date();
 		var currentYear = date.getFullYear();
