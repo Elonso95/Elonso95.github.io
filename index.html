@@ -1004,11 +1004,11 @@
 	document.addEventListener("DOMContentLoaded", function() {
 		var userLanguage = navigator.language || navigator.userLanguage;
 		if(userLanguage.includes('es')) {
-			callToChangeLanguage('es');
+			changeLanguage('es');
 		} else if (userLanguage.includes('en')){
-			callToChangeLanguage('en');
+			changeLanguage('en');
 		} else {
-			callToChangeLanguage('en');
+			changeLanguage('en');
 		}
 		var year = 2018; // El año desde el que quieres calcular
 		var date = new Date();
