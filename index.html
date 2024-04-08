@@ -11,17 +11,14 @@
 	<title>Elvis Alonso Lueje | Portfolio</title>
 </head>
 <body class="with-header position-relative" data-spy="scroll" data-target="#sections-nav" data-offset="80">
-	<script>
-		
-	</script>
 	<header class="header">
 		<div class="container-fluid-limited d-flex align-items-center justify-content-between">
 			<a href="index.html" class="header-brand">
 				<img src="assets/img/logo_b.svg" data-light-src="assets/img/logo.svg" data-dark-src="assets/img/logo_b.svg">
 			</a>
 			<div>
-				<button class="flag-button" onclick="changeLanguage('en')" style=""><img src="assets/img/uk_flag.png" alt="English"></button>
-				<button class="flag-button" onclick="changeLanguage('es')"><img src="assets/img/spain_flag.png" alt="English"></button>
+				<button class="flag-button" onclick="callToChangeLanguage('en')"><img src="assets/img/uk_flag.png" alt="English"></button>
+				<button class="flag-button" onclick="callToChangeLanguage('es')"><img src="assets/img/spain_flag.png" alt="Spanish"></button>
 			</div>
 			<button class="sections-nav-toggler" aria-label="Toggle navigation">
 				<span class="sections-nav-toggler-bar"></span>
@@ -49,16 +46,19 @@
 				<a href="#section-05" class="nav-link sections-nav-link goto-section translate" data-key="sidemenu.education"></a>
 			</li>
 			<li class="sections-nav-item">
-				<a href="#section-06" class="nav-link sections-nav-link goto-section translate" data-key="sidemenu.testimonials"></a>
+				<a href="#section-06" class="nav-link sections-nav-link goto-section translate" data-key="sidemenu.languages"></a>
 			</li>
 			<li class="sections-nav-item">
-				<a href="#section-07" class="nav-link sections-nav-link goto-section translate" data-key="sidemenu.projects"></a>
+				<a href="#section-07" class="nav-link sections-nav-link goto-section translate" data-key="sidemenu.testimonials"></a>
 			</li>
 			<li class="sections-nav-item">
-				<a href="#section-08" class="nav-link sections-nav-link goto-section translate" data-key="sidemenu.licences"></a>
+				<a href="#section-08" class="nav-link sections-nav-link goto-section translate" data-key="sidemenu.projects"></a>
 			</li>
 			<li class="sections-nav-item">
-				<a href="#section-09" class="nav-link sections-nav-link goto-section translate" data-key="sidemenu.contact"></a>
+				<a href="#section-09" class="nav-link sections-nav-link goto-section translate" data-key="sidemenu.licences"></a>
+			</li>
+			<li class="sections-nav-item">
+				<a href="#section-10" class="nav-link sections-nav-link goto-section translate" data-key="sidemenu.contact"></a>
 			</li>
 			<li class="sections-nav-item">
 				<div class="sections-nav-info">
@@ -78,11 +78,13 @@
 								<img src="assets/img/avatar.jpg" class="jumbotron-img animation-translate animation-item-1" alt="Avatar">
 								<h1 class="display-1 display-animated display-animated-in animation-translate animation-item-2">Elvis<br>Alonso<br>Lueje</h1>
 								<p class="lead animation-translate animation-item-3 translate" data-key="section.one.role"></p>
+								<div class="translate" style="display:contents;" data-key="download">
+								</div>
 							</div>
 						</div>
 						<div class="section-footer animation-translate animation-item-4">
 							<a class="section-next goto-section" href="#section-02">
-								<span class="section-next-counter">01/09</span>
+								<span class="section-next-counter">01/10</span>
 								<span class="section-next-label translate" data-key="general.nextchapter"></span>
 								<span class="section-next-icon"></span>
 							</a>
@@ -99,7 +101,7 @@
 						</div>
 						<div class="section-footer animation-translate animation-item-3">
 							<a class="section-next goto-section" href="#section-03">
-								<span class="section-next-counter">02/09</span>
+								<span class="section-next-counter">02/10</span>
 								<span class="section-next-label translate" data-key="general.nextchapter"></span>
 								<span class="section-next-icon"></span>
 							</a>
@@ -149,7 +151,7 @@
 						</div>
 						<div class="section-footer animation-translate animation-item-3">
 							<a class="section-next goto-section" href="#section-04">
-								<span class="section-next-counter">03/09</span>
+								<span class="section-next-counter">03/10</span>
 								<span class="section-next-label translate" data-key="general.nextchapter"></span>
 								<span class="section-next-icon"></span>
 							</a>
@@ -161,15 +163,24 @@
 							<h3 class="translate" data-key="section.forth.programminglang"></h3>
 							<div class="row animation-translate animation-item-2">
 								<div class="col-12 col-md-12">
-									<a class="card" href="#j2ee-modal" data-toggle="modal"><strong>J2EE &#x25B7;</strong></a>
+									<a class="card" href="#j2ee-modal" data-toggle="modal">
+										<img class="card-img-top" src="assets/img/java.png"  data-light-src="assets/img/java.png"  data-dark-src="assets/img/java.png" alt="JAVA">
+										<strong>J2EE &#x25B7;</strong>
+									</a>
 									<div class="progress progress-animated mb-9">
 										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
 									</div>
-									<a class="card" href="#c3-modal" data-toggle="modal"><strong>C# &#x25B7;</strong></a>
+									<a class="card" href="#c3-modal" data-toggle="modal">
+										<img class="card-img-top" src="assets/img/c-sharp.png" data-light-src="assets/img/c-sharp.png" data-dark-src="assets/img/c-sharp.png" alt="csharp">
+										<strong>C# &#x25B7;</strong>
+									</a>
 									<div class="progress progress-animated mb-9">
 										<div class="progress-bar" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
 									</div>
-									<strong class="progress-label">PYTHON</strong>
+									<div style="display:inline-flex;">
+										<img class="card-img-top" src="assets/img/python.png" data-light-src="assets/img/python.png" data-dark-src="assets/img/python.png" alt="python">
+										<strong class="progress-label">PYTHON</strong>
+									</div>
 									<div class="progress progress-animated mb-9">
 										<div class="progress-bar" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
 									</div>
@@ -178,42 +189,73 @@
 							<h3 class="translate" data-key="section.forth.webpagelang"></h3>
 							<div class="row animation-translate animation-item-2">
 								<div class="col-12 col-md-6">
-									<strong class="progress-label">HTML5</strong>
+									<div style="display:inline-flex;">
+										<img class="card-img-top" src="assets/img/html-5.png" data-light-src="assets/img/html-5.png" data-dark-src="assets/img/html-5.png" alt="html-5">
+										<strong class="progress-label">HTML5</strong>
+									</div>
 									<div class="progress progress-animated mb-9">
 										<div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
 									</div>
-									<strong class="progress-label">CSS3</strong>
+									<div style="display:inline-flex;">
+										<img class="card-img-top" src="assets/img/css-3.png" data-light-src="assets/img/css-3.png" data-dark-src="assets/img/css-3.png" alt="css-3">
+										<strong class="progress-label">CSS3</strong>
+									</div>
 									<div class="progress progress-animated mb-9">
 										<div class="progress-bar" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
 									</div>
-									<strong class="progress-label">XML</strong>
+									<div style="display:inline-flex;">
+										<img class="card-img-top" src="assets/img/xml.png" data-light-src="assets/img/xml.png" data-dark-src="assets/img/xml.png" alt="xml">
+										<strong class="progress-label">XML</strong>
+									</div>
 									<div class="progress progress-animated mb-9">
 										<div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
 									</div>
 								</div>
 								<div class="col-12 col-md-6">
-									<a class="card" href="#javascript-modal" data-toggle="modal"><strong>JAVASCRIPT &#x25B7;</strong></a>
+									<a class="card" href="#javascript-modal" data-toggle="modal">
+										<img class="card-img-top" src="assets/img/js.png" data-light-src="assets/img/js.png" data-dark-src="assets/img/js.png" alt="js">
+										<strong>JAVASCRIPT &#x25B7;</strong>
+									</a>
 									<div class="progress progress-animated mb-9">
 										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
 									</div>
-									<strong class="progress-label">Typescript</strong>
+									<a class="card" href="#typescript-modal" data-toggle="modal" style="display: ruby-text;">
+										<img class="card-img-top" src="assets/img/typescript.png" data-light-src="assets/img/typescript.png" data-dark-src="assets/img/typescript.png" alt="typescript">
+										<strong class="progress-label">Typescript &#x25B7;</strong>
+									</a>
 									<div class="progress progress-animated mb-9">
 										<div class="progress-bar" role="progressbar" style="width: 45%" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+									<div style="display:inline-flex;">
+										<img class="card-img-top" src="assets/img/php_logo.png" data-light-src="assets/img/php_logo.png" data-dark-src="assets/img/php_logo.png" alt="typescript">
+										<strong class="progress-label">PHP</strong>
+									</div>
+									<div class="progress progress-animated mb-9">
+										<div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
 									</div>
 								</div>
 							</div>
 							<h3 class="translate" data-key="section.forth.databasequery"></h3>
 							<div class="row animation-translate animation-item-2">
 								<div class="col-12 col-md-12">
-									<strong class="progress-label">Firebase</strong>
+									<div style="display:inline-flex;">
+										<img class="card-img-top" src="assets/img/firebase.png" data-light-src="assets/img/firebase.png" data-dark-src="assets/img/firebase.png" alt="firebase">
+										<strong class="progress-label">Firebase</strong>
+									</div>
 									<div class="progress progress-animated mb-9">
 										<div class="progress-bar" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
 									</div>
-									<strong class="progress-label">SQL</strong>
+									<div style="display:inline-flex;">
+										<img class="card-img-top" src="assets/img/sql.png" data-light-src="assets/img/sql.png" data-dark-src="assets/img/sql.png" alt="sql">
+										<strong class="progress-label">SQL</strong>
+									</div>
 									<div class="progress progress-animated mb-9">
 										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
 									</div>
-									<strong class="progress-label">HQL</strong>
+									<div style="display:inline-flex;">
+										<img class="card-img-top" src="assets/img/hql.png" data-light-src="assets/img/hql.png" data-dark-src="assets/img/hql.png" alt="hql">
+										<strong class="progress-label">HQL</strong>
+									</div>
 									<div class="progress progress-animated mb-9">
 										<div class="progress-bar" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
 									</div>
@@ -222,15 +264,24 @@
 							<h3 class="translate" data-key="section.forth.webpagetools"></h3>
 							<div class="row animation-translate animation-item-2">
 								<div class="col-12 col-md-12">
-									<strong class="progress-label">Postman</strong>
+									<div style="display:inline-flex;">
+										<img class="card-img-top" src="assets/img/postman.png" data-light-src="assets/img/postman.png" data-dark-src="assets/img/postman.png" alt="postman">
+										<strong class="progress-label">Postman</strong>
+									</div>
 									<div class="progress progress-animated mb-9">
 										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
 									</div>
-									<strong class="progress-label">Swagger</strong>
+									<div style="display:inline-flex;">
+										<img class="card-img-top" src="assets/img/swagger.png" data-light-src="assets/img/swagger.png" data-dark-src="assets/img/swagger.png" alt="swagger">
+										<strong class="progress-label">Swagger</strong>
+									</div>
 									<div class="progress progress-animated mb-9">
 										<div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
 									</div>
-									<strong class="progress-label">SoapUI</strong>
+									<div style="display:inline-flex;">
+										<img class="card-img-top" src="assets/img/soapui.png" data-light-src="assets/img/soapui.png" data-dark-src="assets/img/soapui.png" alt="soapui">
+										<strong class="progress-label">SoapUI</strong>
+									</div>
 									<div class="progress progress-animated mb-9">
 										<div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
 									</div>
@@ -239,11 +290,17 @@
 							<h3 class="translate" data-key="section.forth.versioncontrol"></h3>
 							<div class="row animation-translate animation-item-2">
 								<div class="col-12 col-md-6">
-									<strong class="progress-label">Git</strong>
+									<div style="display:inline-flex;">
+										<img class="card-img-top" src="assets/img/github.png" data-light-src="assets/img/github.png" data-dark-src="assets/img/github.png" alt="github">
+										<strong class="progress-label">Git</strong>
+									</div>
 									<div class="progress progress-animated mb-9">
 										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
 									</div>
-									<strong class="progress-label">Plastic SCM</strong>
+									<div style="display:inline-flex;">
+										<img class="card-img-top" src="assets/img/plastic.png" data-light-src="assets/img/plastic.png" data-dark-src="assets/img/plastic.png" alt="plastic">
+										<strong class="progress-label">Plastic SCM</strong>
+									</div>
 									<div class="progress progress-animated mb-9">
 										<div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
 									</div>
@@ -253,7 +310,10 @@
 									<div class="progress progress-animated mb-9">
 										<div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
 									</div>
-									<strong class="progress-label">Apache Subversion</strong>
+									<div style="display:inline-flex;">
+										<img class="card-img-top" src="assets/img/subversion.png" data-light-src="assets/img/subversion.png" data-dark-src="assets/img/subversion.png" alt="subversion">
+										<strong class="progress-label">Apache Subversion</strong>
+									</div>
 									<div class="progress progress-animated mb-9">
 										<div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
 									</div>
@@ -262,11 +322,17 @@
 							<h3 class="translate" data-key="section.forth.testing"></h3>
 							<div class="row animation-translate animation-item-2">
 								<div class="col-12 col-md-12">
-									<strong class="progress-label">JUnit</strong>
+									<div style="display:inline-flex;">
+										<img class="card-img-top" src="assets/img/junit.png" data-light-src="assets/img/junit.png" data-dark-src="assets/img/junit.png" alt="junit">
+										<strong class="progress-label">JUnit</strong>
+									</div>
 									<div class="progress progress-animated mb-9">
 										<div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
 									</div>
-									<strong class="progress-label">Mockito</strong>
+									<div style="display:inline-flex;">
+										<img class="card-img-top" src="assets/img/mockito.png" data-light-src="assets/img/mockito.png" data-dark-src="assets/img/mockito.png" alt="mockito">
+										<strong class="progress-label">Mockito</strong>
+									</div>
 									<div class="progress progress-animated mb-9">
 										<div class="progress-bar" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
 									</div>
@@ -275,21 +341,33 @@
 							<h3 class="translate" data-key="section.forth.others"></h3>
 							<div class="row animation-translate animation-item-2">
 								<div class="col-12 col-md-6">
-									<strong class="progress-label">Jenkins</strong>
+									<div style="display:inline-flex;">
+										<img class="card-img-top" src="assets/img/jenkins.png" data-light-src="assets/img/jenkins.png" data-dark-src="assets/img/jenkins.png" alt="jenkins">
+										<strong class="progress-label">Jenkins</strong>
+									</div>
 									<div class="progress progress-animated mb-9">
 										<div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
 									</div>
-									<strong class="progress-label">SonarQube</strong>
+									<div style="display:inline-flex;">
+										<img class="card-img-top" src="assets/img/sonarqube.png" data-light-src="assets/img/sonarqube.png" data-dark-src="assets/img/sonarqube.png" alt="sonarqube">
+										<strong class="progress-label">SonarQube</strong>
+									</div>
 									<div class="progress progress-animated mb-9">
 										<div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
 									</div>
 								</div>
 								<div class="col-12 col-md-6">
-									<strong class="progress-label">Amazon Web Services</strong>
+									<div style="display:inline-flex;">
+										<img class="card-img-top" src="assets/img/aws.png" data-light-src="assets/img/aws.png" data-dark-src="assets/img/aws.png" alt="aws">
+										<strong class="progress-label">Amazon Web Services</strong>
+									</div>
 									<div class="progress progress-animated mb-9">
 										<div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
 									</div>
-									<strong class="progress-label">Microsoft Azure</strong>
+									<div style="display:inline-flex;">
+										<img class="card-img-top" src="assets/img/azure.png" data-light-src="assets/img/azure.png" data-dark-src="assets/img/azure.png" alt="azure">
+										<strong class="progress-label">Microsoft Azure</strong>
+									</div>
 									<div class="progress progress-animated mb-9">
 										<div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
 									</div>
@@ -298,7 +376,7 @@
 						</div>
 						<div class="section-footer animation-translate animation-item-3">
 							<a class="section-next goto-section" href="#section-05">
-								<span class="section-next-counter">04/09</span>
+								<span class="section-next-counter">04/10</span>
 								<span class="section-next-label translate" data-key="general.nextchapter"></span>
 								<span class="section-next-icon"></span>
 							</a>
@@ -310,7 +388,10 @@
 							<div class="timeline timeline-animated">
 								<div class="timeline-item">
 									<span class="timeline-date">2015&nbsp;–&nbsp;2017</span>
-									<h3 class="timeline-title">IES Juan Jose Calvo Miguel</h3>
+									<div class="d-flex flex-md-row flex-column align-items-md-center">
+										<h3 class="timeline-title">IES Juan Jose Calvo Miguel</h3>
+										<a class="text-left text-md-center ml-md-2 font-weight-bold translate" href="#certification-modal" data-toggle="modal" data-key="section.fifth.viewcert"></a>
+									</div>
 									<p class="timeline-text translate" data-key="section.fifth.studies"></p>
 									<ul class="translate" data-key="section.fifth.enumdesc"></ul>
 									<strong class="translate" data-key="section.fifth.skills"></strong>
@@ -337,7 +418,7 @@
 						</div>
 						<div class="section-footer animation-translate animation-item-2">
 							<a class="section-next goto-section" href="#section-06">
-								<span class="section-next-counter">05/09</span>
+								<span class="section-next-counter">05/10</span>
 								<span class="section-next-label translate" data-key="general.nextchapter"></span>
 								<span class="section-next-icon"></span>
 							</a>
@@ -346,9 +427,50 @@
 					<section id="section-06" class="section animation">
 						<div class="section-body">
 							<h2 class="section-title animation-translate-overline animation-item-1 translate" data-key="section.sixth.title"></h2>
+							<article class="article animation-translate animation-item-2 translate" data-key="section.sixth.languages">
+							</article>
+						</div>
+						<div class="section-footer animation-translate animation-item-3">
+							<a class="section-next goto-section" href="#section-07">
+								<span class="section-next-counter">06/10</span>
+								<span class="section-next-label translate" data-key="general.nextchapter"></span>
+								<span class="section-next-icon"></span>
+							</a>
+						</div>
+					</section>
+					<section id="section-07" class="section animation">
+						<div class="section-body">
+							<h2 class="section-title animation-translate-overline animation-item-1 translate" data-key="section.seventh.title"></h2>
 							<div id="carousel" class="carousel slide animation-translate animation-item-2" data-ride="carousel">
 								<div class="carousel-inner">
 									<div class="carousel-item active">
+										<div class="testimonial">
+											<div class="testimonial-body">
+												<h3 class="testimonial-title">Rafael Camarena Samper</h3>
+												<h4 class="testimonial-subtitle"><a href="https://www.linkedin.com/in/rafael-camarena-samper-986253aa" target="_blank">Linkedin</a></h4>
+												<p class="testimonial-text">
+													Ha sido una verdadera suerte colaborar con Elvis durante los más de dos años en los que coincidimos trabajando para el mismo cliente.
+													A lo largo de este tiempo, he tenido el placer de aprender de él por su dominio en tecnologías como Java y JS. 
+													Elvis ha demostrado ser un gran compañero, compartiendo su conocimiento y experiencia conmigo, lo que me ha permitido enriquecer mis habilidades en estas áreas.
+													Es el tipo de colega que hace que los momentos de pausa sean mas amenos gracias a su conversación y alegría.
+													Estoy convencido de que su dedicación, habilidades y actitud positiva serán igualmente apreciadas en cualquier proyecto o equipo que tenga la suerte de contar con él.
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="carousel-item">
+										<div class="testimonial">
+											<div class="testimonial-body">
+												<h3 class="testimonial-title">Adolfo Israel Moreno Barbero</h3>
+												<h4 class="testimonial-subtitle"><a href="https://www.linkedin.com/in/adolfoisraelmoreno" target="_blank">Linkedin</a></h4>
+												<p class="testimonial-text">
+													Es una persona muy comprometida con sus tareas y tiene una gran vocacion por la profesión. 
+													Siempre da todo para cumplir sus objetivos. Es un orgullo trabajar con el.
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="carousel-item">
 										<div class="testimonial">
 											<div class="testimonial-body">
 												<h3 class="testimonial-title">Alexis Castaño</h3>
@@ -417,6 +539,8 @@
 									<li data-target="#carousel" data-slide-to="1"></li>
 									<li data-target="#carousel" data-slide-to="2"></li>
 									<li data-target="#carousel" data-slide-to="3"></li>
+									<li data-target="#carousel" data-slide-to="4"></li>
+									<li data-target="#carousel" data-slide-to="5"></li>
 								</ol>
 								<a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
 									<span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -429,35 +553,8 @@
 							</div>
 						</div>
 						<div class="section-footer animation-translate animation-item-3">
-							<a class="section-next goto-section" href="#section-07">
-								<span class="section-next-counter">06/10</span>
-								<span class="section-next-label translate" data-key="general.nextchapter"></span>
-								<span class="section-next-icon"></span>
-							</a>
-						</div>
-					</section>
-					<section id="section-07" class="section animation">
-						<div class="section-body">
-							<h2 class="section-title animation-translate-overline animation-item-1 translate" data-key="section.seventh.title"></h2>
-							<div class="timeline timeline-animated">
-								<div class="timeline-item">
-									<span class="timeline-date">Feb 2016&nbsp;–&nbsp;Jun 2017</span>
-									<h3 class="timeline-title">The Learning Gemas - Erasmus+</h3>
-									<p class="timeline-text"><strong class="translate" data-key="section.seventh.role"></strong></p>
-									<p class="translate" data-key="section.seventh.description"></p>
-									<div class="timeline-date">
-										<ul>
-											<li class="translate" data-key="section.seventh.interface"></li>
-											<li class="translate" data-key="section.seventh.database"></li>
-											<li>HTML framework : Ionic Framework.</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="section-footer animation-translate animation-item-3">
 							<a class="section-next goto-section" href="#section-08">
-								<span class="section-next-counter">07/09</span>
+								<span class="section-next-counter">07/10</span>
 								<span class="section-next-label translate" data-key="general.nextchapter"></span>
 								<span class="section-next-icon"></span>
 							</a>
@@ -466,52 +563,25 @@
 					<section id="section-08" class="section animation">
 						<div class="section-body">
 							<h2 class="section-title animation-translate-overline animation-item-1 translate" data-key="section.eigth.title"></h2>
-							<div class="row animation-translate animation-item-2">
-								<div class="col-12 col-md-4">
-									<a class="card" href="https://www.udemy.com/certificate/UC-47fb71be-90ac-4a63-974f-70557549d3fa/" target="_blank">
-										<img class="card-img-top" src="assets/img/udemy_logo.png"  data-light-src="assets/img/udemy_logo_b.png"  data-dark-src="assets/img/udemy_logo.png" alt="Aprende PHP desde Cero - Nivel Básico">
-										<div class="card-body">
-											<h3 class="card-title">Aprende PHP desde Cero - Nivel Básico</h3>
-											<h4 class="card-subtitle"><strong class="translate" data-key="section.fifth.skills"></strong>PHP</h4>
-											<p class="card-tags"><strong class="translate" style="font-weight: 700;" data-key="section.eigth.issued"></strong> <span class="translate" data-key="month.jan"></span> 2024</p>
-										</div>
-									</a>
-								</div>
-								<div class="col-12 col-md-4">
-									<a class="card" href="https://www.udemy.com/certificate/UC-d86f6288-9a18-4750-aabe-c868091d8ab4/" target="_blank">
-										<img class="card-img-top" src="assets/img/udemy_logo.png" data-light-src="assets/img/udemy_logo_b.png" data-dark-src="assets/img/udemy_logo.png" alt="PHP basics for beginners">
-										<div class="card-body">
-											<h3 class="card-title">PHP basics for beginners</h3>
-											<h4 class="card-subtitle"><strong class="translate" data-key="section.fifth.skills"></strong>PHP</h4>
-											<p class="card-tags"><strong class="translate" style="font-weight: 700;" data-key="section.eigth.issued"></strong> <span class="translate" data-key="month.jan"></span> 2024</p>
-										</div>
-									</a>
-								</div>
-								<div class="col-12 col-md-4">
-									<a class="card" href="https://www.udemy.com/certificate/UC-649c5390-5356-438e-a16a-f5d00ee4cbf2/" target="_blank">
-										<img class="card-img-top" src="assets/img/udemy_logo.png" data-light-src="assets/img/udemy_logo_b.png" data-dark-src="assets/img/udemy_logo.png" alt="PHP: Ultimate guide to PHP for everyone">
-										<div class="card-body">
-											<h3 class="card-title">PHP: Ultimate guide to PHP for everyone</h3>
-											<h4 class="card-subtitle"><strong class="translate" data-key="section.fifth.skills"></strong>PHP</h4>
-											<p class="card-tags"><strong class="translate" style="font-weight: 700;" data-key="section.eigth.issued"></strong> <span class="translate" data-key="month.jan"></span> 2024</p>
-										</div>
-									</a>
-								</div>
-								<div class="col-12 col-md-4">
-									<a class="card" href="https://www.udemy.com/certificate/UC-789a19a9-331b-4460-9638-9deb2cfd6ce3/" target="_blank">
-										<img class="card-img-top" src="assets/img/udemy_logo.png" data-light-src="assets/img/udemy_logo_b.png" data-dark-src="assets/img/udemy_logo.png" alt="Introducción Vue js 2 framework JAVASCRIPT desde CERO">
-										<div class="card-body">
-											<h3 class="card-title">Introducción Vue js 2 framework JAVASCRIPT desde CERO</h3>
-											<h4 class="card-subtitle"><strong class="translate" data-key="section.fifth.skills"></strong>Vue.js</h4>
-											<p class="card-tags"><strong class="translate" style="font-weight: 700;" data-key="section.eigth.issued"></strong> Oct 2021</p>
-										</div>
-									</a>
+							<div class="timeline timeline-animated">
+								<div class="timeline-item">
+									<span class="timeline-date">Feb 2016&nbsp;–&nbsp;Jun 2017</span>
+									<h3 class="timeline-title">The Learning Games - Erasmus+</h3>
+									<p class="timeline-text"><strong class="translate" data-key="section.eigth.role"></strong></p>
+									<p class="translate" data-key="section.eigth.description"></p>
+									<div class="timeline-date">
+										<ul>
+											<li class="translate" data-key="section.eigth.interface"></li>
+											<li class="translate" data-key="section.eigth.database"></li>
+											<li>HTML framework : Ionic Framework.</li>
+										</ul>
+									</div>
 								</div>
 							</div>
 						</div>
 						<div class="section-footer animation-translate animation-item-3">
 							<a class="section-next goto-section" href="#section-09">
-								<span class="section-next-counter">08/09</span>
+								<span class="section-next-counter">08/10</span>
 								<span class="section-next-label translate" data-key="general.nextchapter"></span>
 								<span class="section-next-icon"></span>
 							</a>
@@ -520,10 +590,56 @@
 					<section id="section-09" class="section animation">
 						<div class="section-body">
 							<h2 class="section-title animation-translate-overline animation-item-1 translate" data-key="section.nine.title"></h2>
+							<div class="row animation-translate animation-item-2">
+								<div class="col-6 col-md-2">
+									<a class="card" href="#js-cert-modal" data-toggle="modal">
+										<img class="card-img-top" src="assets/img/js.png"  data-light-src="assets/img/js.png"  data-dark-src="assets/img/js.png" alt="JS">
+										<div class="card-body">
+											<h3 class="card-title">JS</h3>
+										</div>
+									</a>
+								</div>
+								<div class="col-6 col-md-2">
+									<a class="card" href="#npm-cert-modal" data-toggle="modal">
+										<img class="card-img-top" src="assets/img/npm_logo.png"  data-light-src="assets/img/npm_logo.png"  data-dark-src="assets/img/npm_logo.png" alt="NPM">
+										<div class="card-body">
+											<h3 class="card-title">NPM</h3>
+										</div>
+									</a>
+								</div>
+								<div class="col-6 col-md-2">
+									<a class="card" href="#php-cert-modal" data-toggle="modal">
+										<img class="card-img-top" src="assets/img/php_logo.png"  data-light-src="assets/img/php_logo.png"  data-dark-src="assets/img/php_logo.png" alt="PHP">
+										<div class="card-body">
+											<h3 class="card-title">PHP</h3>
+										</div>
+									</a>
+								</div>
+								<div class="col-6 col-md-2">
+									<a class="card" href="#vue-cert-modal" data-toggle="modal">
+										<img class="card-img-top" src="assets/img/vue_logo.png"  data-light-src="assets/img/vue_logo.png"  data-dark-src="assets/img/vue_logo.png" alt="PHP">
+										<div class="card-body">
+											<h3 class="card-title">VueJS</h3>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="section-footer animation-translate animation-item-3">
+							<a class="section-next goto-section" href="#section-10">
+								<span class="section-next-counter">09/10</span>
+								<span class="section-next-label translate" data-key="general.nextchapter"></span>
+								<span class="section-next-icon"></span>
+							</a>
+						</div>
+					</section>
+					<section id="section-10" class="section animation">
+						<div class="section-body">
+							<h2 class="section-title animation-translate-overline animation-item-1 translate" data-key="section.ten.title"></h2>
 							<div class="row mb-10 animation-translate animation-item-2">
 								<div class="col-12 col-md-6">
 									<div class="contact">
-										<strong class="contact-label translate" data-key="section.nine.intouch"></strong>
+										<strong class="contact-label translate" data-key="section.ten.intouch"></strong>
 										<a href="mailto:elvis.al.95@gmail.com">elvis.al.95@gmail.com</a><br>
 										<a href="tel:+34665961749">+34 665 96 17 49</a>
 									</div>
@@ -531,7 +647,7 @@
 								<div class="col-12 col-md-6">
 									<div class="contact">
 										<strong class="contact-label">Social</strong>
-										<a href="www.linkedin.com/in/elvisalo">
+										<a href="https://www.linkedin.com/in/elvisalo">
 											<img src="assets/img/linkedin-logo.png" alt="Linkedin Icon" style="width: auto; height: 18px; vertical-align: unset;">
 											Linkedin</a><br>
 									</div>
@@ -540,7 +656,7 @@
 						</div>
 						<div class="section-footer animation-translate animation-item-5">
 							<span class="section-next goto-section">
-								<span class="section-next-counter">09/09</span>
+								<span class="section-next-counter">10/10</span>
 							</span>
 						</div>
 					</section>
@@ -606,6 +722,7 @@
 									<li>Spring MVC</li>
 									<li>Spring Batch</li>
 									<li>Spring Boot</li>
+									<li>Spring Cache</li>
 									<li class="translate" data-key="modals.java.microservices"></li>
 									<li>JPA</li>
                                 </ul>
@@ -650,6 +767,7 @@
 									<li>Angular</li>
 									<li>Ajax</li>
 									<li>ExtJs</li>
+									<li>VueJS</li>
                                 </ul>
 								<h4 class="translate" data-key="modals.js.texteditor"></h4>
 								<ul>
@@ -663,16 +781,194 @@
 			</div>
 		</div>
 	</div>
+	<div id="typescript-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modal" aria-hidden="true">
+		<div class="modal-dialog modal-fluid">
+			<div class="modal-content modal-content-subskill">
+				<div class="modal-header">
+					&nbsp;
+					<button type="button" class="modal-close" data-dismiss="modal" aria-label="Close">
+						<span class="d-none">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<article class="article">
+						<div class="article-header">
+							<h2 class="article-title">Typescript</h2>
+							
+						</div>
+						<div class="row flex-column-reverse flex-lg-row">
+							<div class="col-6 col-lg-12">
+								<h4>Frameworks</h4>
+								<ul>
+                                    <li>Vue</li>
+                                </ul>
+								<h4 class="translate" data-key="modals.js.texteditor"></h4>
+								<ul>
+                                    <li>Visual Studio Code</li>
+									<li>Sublime Text 3</li>
+                                </ul>
+							</div>
+						</div>
+					</article>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="js-cert-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modal" aria-hidden="true">
+		<div class="modal-dialog modal-fluid" style="margin-top: 4%;">
+			<div class="modal-content modal-content-subskill">
+				<div class="modal-header">
+					&nbsp;
+					<h2>Javascript</h2><button type="button" class="modal-close" data-dismiss="modal" aria-label="Close">
+						<span class="d-none">×</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-12 col-md-4">
+							<a class="card" href="https://www.udemy.com/certificate/UC-0622d899-8fb6-45c9-af82-ddf95e249c5c/" target="_blank">
+								<img class="card-img-top" src="assets/img/udemy_logo.png" data-light-src="assets/img/udemy_logo_b.png" data-dark-src="assets/img/udemy_logo.png" alt="Introducción Vue js 2 framework JAVASCRIPT desde CERO">
+								<div class="card-body">
+									<h3 class="card-title"> 2019 JavaScript Algorithmic Scripting: Basic Level</h3>
+									<p class="card-tags"><strong class="translate" style="font-weight: 700;" data-key="section.nine.issued">Issued</strong> <span class="translate" data-key="month.apr"></span> 2024</p>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="npm-cert-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modal" aria-hidden="true">
+		<div class="modal-dialog modal-fluid" style="margin-top: 4%;">
+			<div class="modal-content modal-content-subskill">
+				<div class="modal-header">
+					&nbsp;
+					<h2>NODE JS</h2><button type="button" class="modal-close" data-dismiss="modal" aria-label="Close">
+						<span class="d-none">×</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-12 col-md-4">
+							<a class="card" href="https://www.udemy.com/certificate/UC-2e92cd19-248a-45d6-ab1e-87d9f282dce2/" target="_blank">
+								<img class="card-img-top" src="assets/img/udemy_logo.png" data-light-src="assets/img/udemy_logo_b.png" data-dark-src="assets/img/udemy_logo.png" alt="Introducción Vue js 2 framework JAVASCRIPT desde CERO">
+								<div class="card-body">
+									<h3 class="card-title">Understanding NPM - Node.js Package Manager</h3>
+									<p class="card-tags"><strong class="translate" style="font-weight: 700;" data-key="section.nine.issued">Issued</strong> <span class="translate" data-key="month.mar"></span> 2024</p>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="php-cert-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modal" aria-hidden="true">
+		<div class="modal-dialog modal-fluid" style="margin-top: 4%;">
+			<div class="modal-content modal-content-subskill">
+				<div class="modal-header">
+					&nbsp;
+					<h2>PHP</h2><button type="button" class="modal-close" data-dismiss="modal" aria-label="Close">
+						<span class="d-none">×</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-12 col-md-4">
+							<a class="card" href="https://www.udemy.com/certificate/UC-ae6258f9-c6b1-462b-9096-1678e66dca67/" target="_blank">
+								<img class="card-img-top" src="assets/img/udemy_logo.png" data-light-src="assets/img/udemy_logo_b.png" data-dark-src="assets/img/udemy_logo.png" alt="Desarrollador web: Programación estructural en PHP">
+								<div class="card-body">
+									<h3 class="card-title">Desarrollador web: Programación estructural en PHP</h3>
+									<p class="card-tags"><strong class="translate" style="font-weight: 700;" data-key="section.nine.issued">Issued</strong> <span class="translate" data-key="month.mar"></span> 2024</p>
+								</div>
+							</a>
+						</div>
+
+						<div class="col-12 col-md-4">
+							<a class="card" href="https://www.udemy.com/certificate/UC-47fb71be-90ac-4a63-974f-70557549d3fa/" target="_blank">
+								<img class="card-img-top" src="assets/img/udemy_logo.png" data-light-src="assets/img/udemy_logo_b.png" data-dark-src="assets/img/udemy_logo.png" alt="Aprende PHP desde Cero - Nivel Básico">
+								<div class="card-body">
+									<h3 class="card-title">Aprende PHP desde Cero - Nivel Básico</h3>
+									<p class="card-tags"><strong class="translate" style="font-weight: 700;" data-key="section.nine.issued">Issued</strong> <span class="translate" data-key="month.jan"></span> 2024</p>
+								</div>
+							</a>
+						</div>
+						<div class="col-12 col-md-4">
+							<a class="card" href="https://www.udemy.com/certificate/UC-d86f6288-9a18-4750-aabe-c868091d8ab4/" target="_blank">
+								<img class="card-img-top" src="assets/img/udemy_logo.png" data-light-src="assets/img/udemy_logo_b.png" data-dark-src="assets/img/udemy_logo.png" alt="PHP basics for beginners">
+								<div class="card-body">
+									<h3 class="card-title">PHP basics for beginners</h3>
+									<p class="card-tags"><strong class="translate" style="font-weight: 700;" data-key="section.nine.issued">Issued</strong> <span class="translate" data-key="month.jan"></span> 2024</p>
+								</div>
+							</a>
+						</div>
+						<div class="col-12 col-md-4">
+							<a class="card" href="https://www.udemy.com/certificate/UC-649c5390-5356-438e-a16a-f5d00ee4cbf2/" target="_blank">
+								<img class="card-img-top" src="assets/img/udemy_logo.png" data-light-src="assets/img/udemy_logo_b.png" data-dark-src="assets/img/udemy_logo.png" alt="PHP: Ultimate guide to PHP for everyone">
+								<div class="card-body">
+									<h3 class="card-title">PHP: Ultimate guide to PHP for everyone</h3>
+									<p class="card-tags"><strong class="translate" style="font-weight: 700;" data-key="section.nine.issued">Issued</strong> <span class="translate" data-key="month.jan"></span> 2024</p>
+								</div>
+							</a>
+						</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="vue-cert-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modal" aria-hidden="true">
+		<div class="modal-dialog modal-fluid" style="margin-top: 4%;">
+			<div class="modal-content modal-content-subskill">
+				<div class="modal-header">
+					&nbsp;
+					<h2>VueJS</h2><button type="button" class="modal-close" data-dismiss="modal" aria-label="Close">
+						<span class="d-none">×</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<div class="row">
+						<div class="col-12 col-md-4">
+							<a class="card" href="https://www.udemy.com/certificate/UC-789a19a9-331b-4460-9638-9deb2cfd6ce3/" target="_blank">
+								<img class="card-img-top" src="assets/img/udemy_logo.png" data-light-src="assets/img/udemy_logo_b.png" data-dark-src="assets/img/udemy_logo.png" alt="Introducción Vue js 2 framework JAVASCRIPT desde CERO">
+								<div class="card-body">
+									<h3 class="card-title">Introducción Vue js 2 framework JAVASCRIPT desde CERO</h3>
+									<p class="card-tags"><strong class="translate" style="font-weight: 700;" data-key="section.nine.issued">Issued</strong> Oct 2021</p>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="certification-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modal" aria-hidden="true">
+		<div class="modal-dialog modal-fluid" style="margin-top: 4%;">
+			<div class="modal-content modal-content-subskill">
+				<div class="modal-header">
+					<button type="button" class="modal-close" data-dismiss="modal" aria-label="Close">
+						<span class="d-none">×</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<img class="img-fluid" src="assets/docs/certificate.jpg" alt="My certification">
+				</div>
+			</div>
+		</div>
+	</div>
 	<div class="preview-themes">
-		<a href="#theme-yellow-black" class="preview-theme preview-color-yellow-black" title="Select theme" data-toggle="tooltip" data-theme="dist/css/yellow-black.css" data-theme-bg="light"></a>
-		<a href="#theme-black-white" class="preview-theme preview-color-black-white" title="Select theme" data-toggle="tooltip" data-theme="dist/css/black-white.css" data-theme-bg="dark"></a>
-		<a href="#theme-pink-black" class="preview-theme preview-color-pink-black" title="Select theme" data-toggle="tooltip" data-theme="dist/css/pink-black.css" data-theme-bg="light"></a>
-		<a href="#theme-blue-black" class="preview-theme preview-color-blue-black" title="Select theme" data-toggle="tooltip" data-theme="dist/css/blue-black.css" data-theme-bg="light"></a>
+		<a href="#theme-yellow-black" class="preview-theme preview-color-yellow-black" title="Select theme" data-toggle="tooltip" data-theme="dist/css/yellow-black.css" data-theme-bg="light" onclick="changeDownload('light')"></a>
+		<a href="#theme-black-white" class="preview-theme preview-color-black-white" title="Select theme" data-toggle="tooltip" data-theme="dist/css/black-white.css" data-theme-bg="dark" onclick="changeDownload('dark')"></a>
+		<a href="#theme-pink-black" class="preview-theme preview-color-pink-black" title="Select theme" data-toggle="tooltip" data-theme="dist/css/pink-black.css" data-theme-bg="light" onclick="changeDownload('light')"></a>
+		<a href="#theme-blue-black" class="preview-theme preview-color-blue-black" title="Select theme" data-toggle="tooltip" data-theme="dist/css/blue-black.css" data-theme-bg="light" onclick="changeDownload('light')"></a>
 	</div>
 </body>
 <script src="dist/js/all.js"></script>
 <script src="dist/js/i18n.js"></script>
 <script>
+	var darkTheme = false;
 	$(function () {
 		$('[data-toggle="tooltip"]').tooltip();
 
@@ -686,23 +982,24 @@
 			return false;
 		});
 	});
-
-	// Bootstrap form validation example
-	(function() {
-		'use strict';
-		window.addEventListener('load', function() {
-			var forms = document.getElementsByClassName('needs-validation');
-			var validation = Array.prototype.filter.call(forms, function(form) {
-				form.addEventListener('submit', function(event) {
-					if (form.checkValidity() === false) {
-						event.preventDefault();
-						event.stopPropagation();
-					}
-					form.classList.add('was-validated');
-				}, false);
-			});
-		}, false);
-	})();
+	function callToChangeLanguage(language) {
+		changeLanguage(language);
+		changeDownload();
+		var year = 2018; // El año desde el que quieres calcular
+		var date = new Date();
+		var currentYear = date.getFullYear();
+		var yearsPassed = currentYear - year;
+		document.getElementById("years").innerHTML = yearsPassed;
+	}
+	function changeDownload(theme) {
+		if(theme === 'light') {
+			darkTheme = false;
+		} else if(theme === 'dark') {
+			darkTheme = true;
+		}
+		var classHiperlink = darkTheme ? 'button-cv-dark' : 'button-cv';
+		document.getElementById('download-hiperlink').className = classHiperlink;
+	}
 
 	document.addEventListener("DOMContentLoaded", function() {
 		var userLanguage = navigator.language || navigator.userLanguage;

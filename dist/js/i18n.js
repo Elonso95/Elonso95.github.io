@@ -1,6 +1,11 @@
 // traducciones.js
 var translates = {
     es: {
+      download : `
+        <a id="download-hiperlink" href="assets/docs/CV_Spanish.pdf" download class="button-cv">
+          Descargar CV
+        </a>
+      `,
       general: {
         nextchapter: "Siguiente Capitulo"
       },
@@ -15,6 +20,7 @@ var translates = {
       },
       month: {
         jan: "Ene",
+        mar: "Mar",
         apr: "Abr",
         aug: "Ago",
         dec: "Dic"
@@ -26,31 +32,19 @@ var translates = {
         second: {
           title: "Acerca de mi",
           about: `<p>
-                Soy un desarrollador de software con más de 6 años de experiencia en Java y Spring, y con conocimientos de Vue y Angular. 
-                Me apasiona crear soluciones innovadoras y eficientes para diferentes sectores.
+                Soy un desarrollador de software con más de <span id="years"></span> años de experiencia en Java y Spring, y con conocimientos de otros lenguajes y frameworks web, 
+                como Vue, Angular, C#, Python, HTML, CSS y Bootstrap. Me apasiona crear soluciones innovadoras y eficientes para diferentes sectores, 
+                utilizando bases de datos relacionales y servicios y APIs como REST, SOAP, OAuth y JWT.
             </p>
             <p>
-                Mi formación en Java comenzó en la Formación Profesional (FP) de Desarrollo de Aplicaciones Web de nivel superior, 
-                donde tuve la oportunidad de participar en un proyecto Erasmus+ junto con otros estudiantes de diferentes países europeos. 
-                Desarrollamos una aplicación web con AngularJS y Firebase para promover el aprendizaje en el aula a través de la gamificación. 
-                Fue una experiencia muy enriquecedora, tanto técnicamente como personalmente. 
-                Durante mis estudios, también aprendí los fundamentos de otros lenguajes, como C# y Python.
-            </p>
-            <p>
-                Desde que entré en el mundo laboral, he trabajado para varias empresas, utilizando diferentes frameworks web de Java, 
-                pero especialmente Spring Framework y Spring Boot. Pude participar en el desarrollo de aplicaciones web robustas y escalables, utilizando 
-                bases de datos relacionales como MySQL y Oracle. Además, he integrado diferentes servicios y APIs, como REST, SOAP, OAuth y JWT.
-            </p>
-            <p>
-                Además de Java, he aprendido a usar otros lenguajes y herramientas para crear interfaces atractivas y funcionales. 
-                Algunos de los frameworks que he utilizado son Vue y Angular, que facilitan el desarrollo de componentes reutilizables y dinámicos. 
-                Para implementar diseños responsivos y adaptativos, he utilizado HTML, CSS y Bootstrap y, para gestionar 
-                el entorno de desarrollo y las dependencias de las aplicaciones web, he hecho uso de Node.js y NPM.
+                Mi formación en Java comenzó en la FP de Desarrollo de Aplicaciones Web de nivel superior, donde participé en un proyecto Erasmus+ junto 
+                con otros estudiantes de diferentes países europeos. Desarrollamos una aplicación web con AngularJS y Firebase para promover el aprendizaje en 
+                el aula a través de la gamificación. Fue una experiencia muy enriquecedora, tanto técnicamente como personalmente.
             </p>
             <p>
                 Mi objetivo como desarrollador es nunca dejar de aprender y mejorar, y mantenerme al día con las nuevas tecnologías y metodologías. 
-                Estoy motivado para trabajar en proyectos que supongan un desafío y una oportunidad de crecimiento. 
-                Además, soy una persona curiosa y creativa comprometida con mi trabajo que también disfruta trabajando en equipo y compartiendo ideas y conocimientos.
+                Estoy motivado para trabajar en proyectos que supongan un desafío y una oportunidad de crecimiento. Además, soy una persona curiosa y creativa, 
+                comprometida con mi trabajo y que disfruta trabajando en equipo y compartiendo ideas y conocimientos.
             </p>`
         },
         third: {
@@ -85,12 +79,40 @@ var translates = {
           oop: "Programación Orientada a Objetos",
           skills: "Habilidades:",
           studies: "Técnico Superior en Desarrollo de Aplicaciones Multiplataforma",
-          title: "Educación"
+          title: "Educación",
+          viewcert: "Ver certificado"
         },
         sixth: {
-          title: "Referencias"
+          languages: `
+            <article class="article animation-translate animation-item-2 transalate" data-key="section.sixth.languages">
+              <strong>Español (Nativo)</strong>
+              <div class="progress progress-animated mb-9">
+                <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <strong>Ingles</strong>
+              <div class="progress progress-animated mb-9">
+                <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <p style="margin-top: -5%;">
+                Mi formación de inglés comenzó con el sistema educativo español, pero fue en mi primer viaje a los Paises Bajos donde experimenté un gran avance en este idioma. 
+                Allí trabajé como voluntario en un hostal durante un mes y conocí a gente de todo el mundo que hablaba inglés con fluidez. 
+                Eso me inspiró a querer dominar el idioma yo también. Desde entonces, he adaptado mi entorno para rodearme de inglés, viendo películas y series, 
+                escuchando música y podcasts, leyendo libros y artículos, y haciendo cursos y proyectos de otros ámbitos, pero en inglés.
+              </p>
+              <p>
+                He viajado por países como Paises Bajos, Dinamarca, Hungría, Estonia, Rumanía, Bulgaria… Donde, a pesar de que el inglés no es su lengua oficial, 
+                he tenido que usarlo para hacer todo tipo de cosas, desde reservar un alojamiento hasta pedir en un restaurante o bar. Aunque no tengo una 
+                titulación oficial que lo certifique, puedo demostrar mi nivel de inglés con facilidad, ya que no me cuesta entablar una conversación y 
+                siempre busco oportunidades para mejorar mi inglés.
+              </p>
+            </article>
+          `,
+          title: "Idiomas",
         },
         seventh: {
+          title: "Referencias"
+        },
+        eigth: {
           database: "Base de Datos: Firebase.",
           description: `
             Nuestro proyecto propone desarrollar un sistema de gamificación de la entrega educativa que aprovecha elementos de la experiencia real de los estudiantes modernos e 
@@ -106,29 +128,35 @@ var translates = {
           role: "Desarrollador Líder de Software",
           title: "Proyectos"
         },
-        eigth: {
+        nine: {
           issued: "Expedido",
           title: "Licencias y Certificados"
         },
-        nine: {
+        ten: {
           intouch: "Manten el contacto",
           title: "Contacto"
         }
       },
       sidemenu: {
         about: "<span class=\"sections-nav-counter\">02</span>Acerca de mi",
-        contact: "<span class=\"sections-nav-counter\">09</span>Contacto",
+        contact: "<span class=\"sections-nav-counter\">10</span>Contacto",
         education: "<span class=\"sections-nav-counter\">05</span>Educación",
         experiences: "<span class=\"sections-nav-counter\">03</span>Experiencia Laboral",
-        licences: "<span class=\"sections-nav-counter\">08</span>Licencias y Certificados",
-        projects: "<span class=\"sections-nav-counter\">07</span>Proyectos",
+        languages: "<span class=\"sections-nav-counter\">06</span>Idiomas",
+        licences: "<span class=\"sections-nav-counter\">09</span>Licencias y Certificados",
+        projects: "<span class=\"sections-nav-counter\">08</span>Proyectos",
         skills: "<span class=\"sections-nav-counter\">04</span>Habilidades",
-        testimonials: "<span class=\"sections-nav-counter\">06</span>Referencias",
+        testimonials: "<span class=\"sections-nav-counter\">07</span>Referencias",
         top: "<span class=\"sections-nav-counter\">01</span>Inicio",
         descripcion: "Esto es una descripción"
       },
     },
     en: {
+      download : `
+        <a id="download-hiperlink" href="assets/docs/CV_English.pdf" download class="button-cv">
+          Download CV
+        </a>
+      `,
       general: {
         nextchapter: "Next Chapter"
       },
@@ -143,6 +171,7 @@ var translates = {
       },
       month: {
         jan: "Jan",
+        mar: "Mar",
         apr: "Apr",
         aug: "Aug",
         dec: "Dic"
@@ -154,29 +183,19 @@ var translates = {
         second: {
           title: "About me",
           about: `<p>
-                I am a software developer with over <span id="years"></span> years of experience in Java and Spring, and with knowledge of Vue and Angular.
-                I am passionate about creating innovative and efficient solutions for different sectors.
+                I am a software developer with more than <span id="years"></span> years of experience in Java and Spring, and with knowledge of other languages and web frameworks, 
+                such as Vue, Angular, C#, Python, HTML, CSS and Bootstrap. I am passionate about creating innovative and efficient solutions for different sectors, 
+                using relational databases and services and APIs such as REST, SOAP, OAuth and JWT.
             </p>
             <p>
-                My training in Java began in the higher-level Vocational Training (FP) in Web Application Development, where I had the opportunity to participate in an Erasmus+ project along with other students from different European countries. 
-                We developed a web application with AngularJS and Firebase to promote classroom learning through gamification. 
-                It was a very enriching experience, both technically and personally. 
-                During my studies, I also learned the fundamentals of other languages, such as C# and Python.
+                My training in Java began in the FP of Web Application Development of higher level, where I participated in an Erasmus+ project together 
+                with other students from different European countries. We developed a web application with AngularJS and Firebase to promote learning in the 
+                classroom through gamification. It was a very enriching experience, both technically and personally.
             </p>
             <p>
-                Since I entered the working world, I have worked for various companies, using different Java web frameworks, but especially Spring Framework and Spring Boot. 
-                I was able to participate in the development of robust and scalable web applications, using relational databases such as MySQL and Oracle. 
-                In addition, I have integrated different services and APIs, such as REST, SOAP, OAuth, and JWT.
-            </p>
-            <p>
-                In addition to Java, I have learned to use other languages and tools to create attractive and functional interfaces. 
-                Some of the frameworks I have used are Vue and Angular, which facilitate the development of reusable and dynamic components. 
-                To implement responsive and adaptive designs, I have used HTML, CSS, and Bootstrap and, to manage the development environment and the dependencies of web applications, I have made use of Node.js and NPM.
-            </p>
-            <p>
-                My goal as a developer is to never stop learning and improving, and to stay up-to-date with new technologies and methodologies. 
-                I am motivated to work on projects that pose a challenge and an opportunity for growth. 
-                In addition, I am a curious, creative person committed to my work who also enjoys working in a team and sharing ideas and knowledge. 
+                My goal as a developer is to never stop learning and improving, and to keep up to date with new technologies and methodologies. 
+                I am motivated to work on projects that pose a challenge and an opportunity for growth. In addition, I am a curious and creative person, 
+                committed to my work and who enjoys working in a team and sharing ideas and knowledge.
             </p>`
         },
         third: {
@@ -211,12 +230,39 @@ var translates = {
           oop: "Object-Oriented Programming (OOP)",
           skills: "Skills:",
           studies: "University of Applied Sciences in Cross Platform Application Development",
-          title: "Education"
+          title: "Education",
+          viewcert: "See certification"
         },
         sixth: {
-          title: "Testimonials"
+          languages: `
+            <article class="article animation-translate animation-item-2 transalate" data-key="section.sixth.languages">
+              <strong>Spanish (Native)</strong>
+              <div class="progress progress-animated mb-9">
+                <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <strong>English</strong>
+              <div class="progress progress-animated mb-9">
+                <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <p style="margin-top: -5%;">
+                My English training started with the Spanish educational system, but it was on my first trip to the Netherlands where I experienced a great improvement in this language. 
+                There I worked as a volunteer in a hostel for a month and met people from all over the world who spoke English fluently. That inspired me to want to master 
+                the language too. Since then, I have adapted my environment to surround myself with English, watching movies and series, listening to music and podcasts, 
+                reading books and articles, and doing courses and projects in other fields, but in English.
+              </p>
+              <p>
+                I have traveled to countries such as the Netherlands, Denmark, Hungary, Estonia, Romania, Bulgaria… Where, despite the fact that English is not their official language, 
+                I have had to use it to do all kinds of things, from booking accommodation to ordering in a restaurant or bar. Although I do not have an official certification 
+                that proves it, I can demonstrate my level of English easily, as I have no trouble starting a conversation and I always look for opportunities to improve my English.
+              </p>
+            </article>
+          `,
+          title: "Languages",
         },
         seventh: {
+          title: "Testimonials"
+        },
+        eigth: {
           database: "Database: Firebase.",
           description: `
             Our project proposes to develop a gamification system of educational delivery that taps into elements from the modern students 
@@ -233,24 +279,25 @@ var translates = {
           role: "Software Lead Developer",
           title: "Projects"
         },
-        eigth: {
+        nine: {
           issued: "Issued",
           title: "Licenses & Certifications"
         },
-        nine: {
+        ten: {
           intouch: "Stay in touch",
           title: "Contact"
         }
       },
       sidemenu: {
         about: "<span class=\"sections-nav-counter\">02</span>About me",
-        contact: "<span class=\"sections-nav-counter\">09</span>Contact",
+        contact: "<span class=\"sections-nav-counter\">10</span>Contact",
         education: "<span class=\"sections-nav-counter\">05</span>Education",
         experiences: "<span class=\"sections-nav-counter\">03</span>Experiences",
-        licences: "<span class=\"sections-nav-counter\">08</span>Licences & Certifications",
-        projects: "<span class=\"sections-nav-counter\">07</span>Projects",
+        licences: "<span class=\"sections-nav-counter\">09</span>Licences & Certifications",
+        languages: "<span class=\"sections-nav-counter\">06</span>Languages",
+        projects: "<span class=\"sections-nav-counter\">08</span>Projects",
         skills: "<span class=\"sections-nav-counter\">04</span>Skills",
-        testimonials: "<span class=\"sections-nav-counter\">06</span>Testimonials",
+        testimonials: "<span class=\"sections-nav-counter\">07</span>Testimonials",
         top: "<span class=\"sections-nav-counter\">01</span>Top",
         descripcion: "This is a description"
       },
